@@ -1,6 +1,8 @@
 <div align="center">
 
-<img src="./assets/hero.svg" width="100%" alt="Maaz Mahboob — AI/ML Engineer focused on Computer Vision and LLM/RAG systems." />
+<img src="./assets/hero.svg"
+     width="100%"
+     alt="Maaz Mahboob — AI/ML Engineer focused on Computer Vision and LLM/RAG systems." />
 
 <br/>
 
@@ -30,7 +32,7 @@
 
 &nbsp;·&nbsp;
 
-[**→ RAG Research Paper**](https://arxiv.org/abs/2603.17872)
+[**→ RAG Research Paper**](https://arxiv.org/)
 
 </div>
 
@@ -51,14 +53,16 @@
 <br/>
 
 <!-- ============================================================
-     EXPERIENCE
+     EDUCATION & EXPERIENCE
      ============================================================ -->
+
+<h3 align="center">EDUCATION &amp; EXPERIENCE</h3>
 
 <div align="center">
 
 <img src="./assets/experience-timeline.svg"
      width="100%"
-     alt="Chronological experience timeline covering B.Tech in Artificial Intelligence, GNCIPL AI/ML internship, SURE Trust Python and ML internship, and current AI/ML engineering focus." />
+     alt="Chronological education and experience timeline covering B.Tech in Artificial Intelligence, GNCIPL AI/ML internship, SURE Trust Python and ML internship, and current AI/ML engineering focus." />
 
 </div>
 
@@ -158,6 +162,35 @@ Regression-based machine learning project for used-car price estimation.
 ![OpenCV](https://img.shields.io/badge/OpenCV-05070D?style=flat-square&logo=opencv&logoColor=22D3EE)
 ![Streamlit](https://img.shields.io/badge/Streamlit-05070D?style=flat-square&logo=streamlit&logoColor=8B5CF6)
 ![Git](https://img.shields.io/badge/Git-05070D?style=flat-square&logo=git&logoColor=06B6D4)
+
+</div>
+
+<br/>
+
+<!-- ============================================================
+     GITHUB CONTRIBUTIONS
+     ============================================================ -->
+
+<h3 align="center">GITHUB CONTRIBUTIONS</h3>
+
+<div align="center">
+
+<picture>
+
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="https://raw.githubusercontent.com/MaazMahboob/MaazMahboob/output/snake-dark.svg" />
+
+  <source
+    media="(prefers-color-scheme: light)"
+    srcset="https://raw.githubusercontent.com/MaazMahboob/MaazMahboob/output/snake-light.svg" />
+
+  <img
+    src="https://raw.githubusercontent.com/MaazMahboob/MaazMahboob/output/snake-dark.svg"
+    width="100%"
+    alt="GitHub contribution activity" />
+
+</picture>
 
 </div>
 
