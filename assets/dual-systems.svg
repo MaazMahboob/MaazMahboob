@@ -1,148 +1,275 @@
-<svg width="1200" height="560" viewBox="0 0 1200 560" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Two flagship systems shown side by side: a clinical chest X-ray computer vision system, and a domain-grounded LLM retrieval-augmented generation research pipeline">
-  <defs>
-    <linearGradient id="cardCV" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#111827"/>
-      <stop offset="100%" stop-color="#0A0E1A"/>
-    </linearGradient>
-    <linearGradient id="cardRAG" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#121026"/>
-      <stop offset="100%" stop-color="#0A0E1A"/>
-    </linearGradient>
-    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
-      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#000000" flood-opacity="0.5"/>
-    </filter>
-    <linearGradient id="flowCV" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#22D3EE"/>
-      <stop offset="100%" stop-color="#06B6D4"/>
-    </linearGradient>
-    <linearGradient id="flowRAG" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#8B5CF6"/>
-      <stop offset="100%" stop-color="#7C3AED"/>
-    </linearGradient>
-  </defs>
+<svg width="1200" height="600" viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Two flagship AI systems: clinical chest X-ray computer vision and domain-grounded LLM retrieval research">
+<defs>
+  <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#04070C"/>
+    <stop offset="55%" stop-color="#080C14"/>
+    <stop offset="100%" stop-color="#0B0A18"/>
+  </linearGradient>
 
-  <rect width="1200" height="560" fill="#05070D"/>
+  <linearGradient id="cvLine" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#22D3EE"/>
+    <stop offset="100%" stop-color="#06B6D4"/>
+  </linearGradient>
 
-  <!-- section label -->
-  <text x="600" y="34" text-anchor="middle" font-family="JetBrains Mono, Consolas, monospace" font-size="13" letter-spacing="4" fill="#6B7280">TWO SYSTEMS · EQUAL WEIGHT</text>
+  <linearGradient id="ragLine" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#A78BFA"/>
+    <stop offset="100%" stop-color="#7C3AED"/>
+  </linearGradient>
 
-  <!-- LEFT CARD: Clinical CV system -->
-  <g>
-    <rect x="30" y="56" width="555" height="480" rx="18" fill="url(#cardCV)" stroke="#22D3EE" stroke-opacity="0.3" filter="url(#shadow)"/>
-    <rect x="30" y="56" width="555" height="4" rx="2" fill="url(#flowCV)"/>
+  <radialGradient id="cvGlow">
+    <stop offset="0%" stop-color="#22D3EE" stop-opacity=".16"/>
+    <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
+  </radialGradient>
 
-    <text x="58" y="98" font-family="JetBrains Mono, Consolas, monospace" font-size="12" letter-spacing="2" fill="#22D3EE">CLINICAL COMPUTER VISION</text>
-    <text x="58" y="130" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="21" font-weight="700" fill="#E5E7EB">Chest X-ray Multi-Disease Detection</text>
-    <text x="58" y="155" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" fill="#8B9DC3">YOLOv11 / YOLOv12-m · Faster R-CNN (Detectron2) · Streamlit · SQLite · Ollama</text>
+  <radialGradient id="ragGlow">
+    <stop offset="0%" stop-color="#8B5CF6" stop-opacity=".15"/>
+    <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
+  </radialGradient>
 
-    <!-- pipeline -->
-    <g font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" fill="#E5E7EB" text-anchor="middle">
-      <line x1="80" y1="210" x2="540" y2="210" stroke="#374151" stroke-width="2" opacity="0.5"/>
-      <line x1="80" y1="210" x2="540" y2="210" stroke="url(#flowCV)" stroke-width="2" stroke-dasharray="5 8">
-        <animate attributeName="stroke-dashoffset" values="0;-130" dur="3.5s" repeatCount="indefinite"/>
-      </line>
+  <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+    <path d="M32 0H0V32" fill="none" stroke="#334155" stroke-width="1" opacity=".09"/>
+  </pattern>
 
-      <circle cx="80" cy="210" r="7" fill="#22D3EE"/>
-      <text x="80" y="185">X-RAY</text>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+    <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity=".45"/>
+  </filter>
 
-      <circle cx="196" cy="210" r="7" fill="#22D3EE"/>
-      <text x="196" y="185">YOLOv12-m</text>
+  <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+    <feGaussianBlur stdDeviation="5" result="blur"/>
+    <feMerge>
+      <feMergeNode in="blur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
 
-      <circle cx="312" cy="210" r="7" fill="#06B6D4"/>
-      <text x="312" y="185">DETECTION</text>
+  <filter id="softGlow" x="-100%" y="-100%" width="300%" height="300%">
+    <feGaussianBlur stdDeviation="10"/>
+  </filter>
+</defs>
 
-      <circle cx="428" cy="210" r="7" fill="#06B6D4"/>
-      <text x="428" y="185">DOCTOR REVIEW</text>
+<!-- BACKGROUND -->
+<rect width="1200" height="600" fill="url(#bg)"/>
+<rect width="1200" height="600" fill="url(#grid)"/>
 
-      <circle cx="540" cy="210" r="7" fill="#8B5CF6"/>
-      <text x="540" y="185">LLM REPORT</text>
-    </g>
+<circle cx="170" cy="170" r="260" fill="url(#cvGlow)">
+  <animate attributeName="r" values="240;280;240" dur="7s" repeatCount="indefinite"/>
+</circle>
 
-    <!-- feedback loop -->
-    <path d="M 540 225 C 540 260 80 260 80 225" fill="none" stroke="#374151" stroke-width="1.5" stroke-dasharray="3 6" opacity="0.6"/>
-    <text x="310" y="275" text-anchor="middle" font-family="JetBrains Mono, Consolas, monospace" font-size="11" fill="#6B7280">↺ physician corrections → YOLO training data → retrain &amp; activate</text>
+<circle cx="1030" cy="170" r="260" fill="url(#ragGlow)">
+  <animate attributeName="r" values="240;280;240" dur="8s" repeatCount="indefinite"/>
+</circle>
 
-    <!-- stat row -->
-    <g font-family="JetBrains Mono, Consolas, monospace">
-      <text x="58" y="330" font-size="26" font-weight="700" fill="#22D3EE">15,000</text>
-      <text x="58" y="350" font-size="11" fill="#8B9DC3">X-ray images</text>
+<!-- HEADER -->
+<text x="600" y="38"
+      text-anchor="middle"
+      font-family="JetBrains Mono,Consolas,monospace"
+      font-size="11"
+      letter-spacing="3.5"
+      fill="#64748B">FLAGSHIP SYSTEMS / 02</text>
 
-      <text x="220" y="330" font-size="26" font-weight="700" fill="#22D3EE">14+1</text>
-      <text x="220" y="350" font-size="11" fill="#8B9DC3">abnormality classes</text>
+<text x="600" y="72"
+      text-anchor="middle"
+      font-family="Segoe UI,Arial,sans-serif"
+      font-size="22"
+      font-weight="700"
+      fill="#E5E7EB">AI systems built around real workflows</text>
 
-      <text x="390" y="330" font-size="26" font-weight="700" fill="#22D3EE">+30%</text>
-      <text x="390" y="350" font-size="11" fill="#8B9DC3">mAP@0.5 vs. baseline</text>
-    </g>
+<line x1="60" y1="92" x2="1140" y2="92" stroke="#1F2937"/>
 
-    <line x1="58" y1="375" x2="558" y2="375" stroke="#374151" stroke-opacity="0.4"/>
+<!-- LEFT SYSTEM -->
+<g filter="url(#shadow)">
+  <rect x="40" y="120" width="540" height="420" rx="20"
+        fill="#091017" stroke="#22D3EE" stroke-opacity=".28"/>
 
-    <text x="58" y="405" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" fill="#E5E7EB" font-weight="600">Production shape, not a notebook:</text>
-    <g font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" fill="#8B9DC3">
-      <text x="58" y="428">• Doctor / Admin / Patient role-based workflows</text>
-      <text x="58" y="450">• Human-in-the-loop retraining pipeline</text>
-      <text x="58" y="472">• Independent FastAPI services: JWT/OAuth2, PostgreSQL,</text>
-      <text x="72" y="490">Alembic, Celery, Docker Compose</text>
-    </g>
+  <rect x="40" y="120" width="540" height="4" rx="2"
+        fill="url(#cvLine)"/>
+</g>
 
-    <text x="58" y="524" font-family="JetBrains Mono, Consolas, monospace" font-size="12" fill="#22D3EE">→ VIEW SYSTEM</text>
-  </g>
+<circle cx="80" cy="160" r="28" fill="#22D3EE" opacity=".08"/>
+<circle cx="80" cy="160" r="10" fill="none" stroke="#22D3EE" stroke-width="2"/>
+<circle cx="80" cy="160" r="3" fill="#67E8F9" filter="url(#glow)">
+  <animate attributeName="r" values="3;5;3" dur="2s" repeatCount="indefinite"/>
+</circle>
 
-  <!-- RIGHT CARD: LLM/RAG system -->
-  <g>
-    <rect x="615" y="56" width="555" height="480" rx="18" fill="url(#cardRAG)" stroke="#8B5CF6" stroke-opacity="0.3" filter="url(#shadow)"/>
-    <rect x="615" y="56" width="555" height="4" rx="2" fill="url(#flowRAG)"/>
+<text x="120" y="155"
+      font-family="JetBrains Mono,Consolas,monospace"
+      font-size="10.5"
+      letter-spacing="2"
+      fill="#67E8F9">COMPUTER VISION</text>
 
-    <text x="643" y="98" font-family="JetBrains Mono, Consolas, monospace" font-size="12" letter-spacing="2" fill="#8B5CF6">LLM / RAG RESEARCH</text>
-    <text x="643" y="130" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="21" font-weight="700" fill="#E5E7EB">Domain-Grounded Tiered Retrieval</text>
-    <text x="643" y="155" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" fill="#8B9DC3">LangGraph · Retrieval-Augmented Generation · Claim Verification</text>
+<text x="120" y="183"
+      font-family="Segoe UI,Arial,sans-serif"
+      font-size="20"
+      font-weight="700"
+      fill="#F1F5F9">Chest X-ray AI System</text>
 
-    <!-- pipeline -->
-    <g font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" fill="#E5E7EB" text-anchor="middle">
-      <line x1="665" y1="210" x2="1125" y2="210" stroke="#374151" stroke-width="2" opacity="0.5"/>
-      <line x1="665" y1="210" x2="1125" y2="210" stroke="url(#flowRAG)" stroke-width="2" stroke-dasharray="5 8">
-        <animate attributeName="stroke-dashoffset" values="0;-130" dur="3.5s" repeatCount="indefinite" begin="0.4s"/>
-      </line>
+<text x="120" y="205"
+      font-family="Segoe UI,Arial,sans-serif"
+      font-size="11.5"
+      fill="#8190A5">Multi-disease detection + local report generation</text>
 
-      <circle cx="665" cy="210" r="7" fill="#8B5CF6"/>
-      <text x="665" y="185">QUERY</text>
+<!-- CV PIPELINE -->
+<g font-family="JetBrains Mono,Consolas,monospace" text-anchor="middle">
+  <line x1="75" y1="270" x2="545" y2="270"
+        stroke="#263746" stroke-width="2"/>
 
-      <circle cx="781" cy="210" r="7" fill="#8B5CF6"/>
-      <text x="781" y="185">TIERED RETRIEVAL</text>
+  <line x1="75" y1="270" x2="545" y2="270"
+        stroke="url(#cvLine)"
+        stroke-width="2"
+        stroke-dasharray="5 9">
+    <animate attributeName="stroke-dashoffset"
+             values="0;-140"
+             dur="3s"
+             repeatCount="indefinite"/>
+  </line>
 
-      <circle cx="897" cy="210" r="7" fill="#7C3AED"/>
-      <text x="897" y="185">CLAIM CHECK</text>
+  <circle cx="75" cy="270" r="7" fill="#22D3EE"/>
+  <circle cx="193" cy="270" r="7" fill="#22D3EE"/>
+  <circle cx="310" cy="270" r="7" fill="#06B6D4"/>
+  <circle cx="427" cy="270" r="7" fill="#06B6D4"/>
+  <circle cx="545" cy="270" r="7" fill="#8B5CF6"/>
 
-      <circle cx="1013" cy="210" r="7" fill="#7C3AED"/>
-      <text x="1013" y="185">GROUNDED ANSWER</text>
+  <text x="75" y="245" font-size="9.5" fill="#CBD5E1">X-RAY</text>
+  <text x="193" y="245" font-size="9.5" fill="#CBD5E1">YOLO</text>
+  <text x="310" y="245" font-size="9.5" fill="#CBD5E1">DETECT</text>
+  <text x="427" y="245" font-size="9.5" fill="#CBD5E1">REVIEW</text>
+  <text x="545" y="245" font-size="9.5" fill="#CBD5E1">REPORT</text>
+</g>
 
-      <circle cx="1125" cy="210" r="7" fill="#22D3EE"/>
-      <text x="1125" y="185">VERIFIED OUTPUT</text>
-    </g>
+<text x="310" y="305"
+      text-anchor="middle"
+      font-family="Segoe UI,Arial,sans-serif"
+      font-size="11"
+      fill="#64748B">Streamlit · SQLite · Ollama</text>
 
-    <text x="895" y="260" text-anchor="middle" font-family="JetBrains Mono, Consolas, monospace" font-size="11" fill="#6B7280">four-phase LangGraph pipeline · atomic claim verification</text>
+<!-- CV METRICS -->
+<line x1="70" y1="335" x2="550" y2="335" stroke="#263746"/>
 
-    <!-- stat row -->
-    <g font-family="JetBrains Mono, Consolas, monospace">
-      <text x="643" y="330" font-size="26" font-weight="700" fill="#8B5CF6">83.7%</text>
-      <text x="643" y="350" font-size="11" fill="#8B9DC3">win rate · TimeQA v2</text>
+<g font-family="JetBrains Mono,Consolas,monospace">
+  <text x="70" y="375" font-size="25" font-weight="700" fill="#67E8F9">15K</text>
+  <text x="70" y="395" font-size="10" fill="#718096">X-RAY IMAGES</text>
 
-      <text x="820" y="330" font-size="26" font-weight="700" fill="#8B5CF6">78.0%</text>
-      <text x="820" y="350" font-size="11" fill="#8B9DC3">MMLU Global Facts</text>
+  <text x="245" y="375" font-size="25" font-weight="700" fill="#67E8F9">14</text>
+  <text x="245" y="395" font-size="10" fill="#718096">ABNORMALITY CLASSES</text>
 
-      <text x="990" y="330" font-size="26" font-weight="700" fill="#8B5CF6">650</text>
-      <text x="990" y="350" font-size="11" fill="#8B9DC3">evaluation queries</text>
-    </g>
+  <text x="435" y="375" font-size="25" font-weight="700" fill="#67E8F9">+30%</text>
+  <text x="435" y="395" font-size="10" fill="#718096">mAP@0.5</text>
+</g>
 
-    <line x1="643" y1="375" x2="1143" y2="375" stroke="#374151" stroke-opacity="0.4"/>
+<text x="70" y="438"
+      font-family="Segoe UI,Arial,sans-serif"
+      font-size="11.5"
+      fill="#94A3B8">Computer vision pipeline for chest X-ray abnormality detection,</text>
+<text x="70" y="458"
+      font-family="Segoe UI,Arial,sans-serif"
+      font-size="11.5"
+      fill="#94A3B8">with feedback and local LLM-assisted reporting.</text>
 
-    <text x="643" y="405" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" fill="#E5E7EB" font-weight="600">Why it matters:</text>
-    <g font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" fill="#8B9DC3">
-      <text x="643" y="428">• Targets LLM hallucination directly, not just retrieval recall</text>
-      <text x="643" y="450">• Atomic claim verification per generated statement</text>
-      <text x="643" y="472">• Benchmarked against strong general-knowledge baselines</text>
-      <text x="643" y="490">(MMLU Global Facts, TimeQA v2)</text>
-    </g>
+<!-- RIGHT SYSTEM -->
+<g filter="url(#shadow)">
+  <rect x="620" y="120" width="540" height="420" rx="20"
+        fill="#0C0A18" stroke="#8B5CF6" stroke-opacity=".30"/>
 
-    <text x="643" y="524" font-family="JetBrains Mono, Consolas, monospace" font-size="12" fill="#8B5CF6">→ READ THE PAPER</text>
-  </g>
+  <rect x="620" y="120" width="540" height="4" rx="2"
+        fill="url(#ragLine)"/>
+</g>
+
+<circle cx="660" cy="160" r="28" fill="#8B5CF6" opacity=".08"/>
+<circle cx="660" cy="160" r="10" fill="none" stroke="#A78BFA" stroke-width="2"/>
+<circle cx="660" cy="160" r="3" fill="#C4B5FD" filter="url(#glow)">
+  <animate attributeName="r" values="3;5;3" dur="2.3s" repeatCount="indefinite"/>
+</circle>
+
+<text x="700" y="155"
+      font-family="JetBrains Mono,Consolas,monospace"
+      font-size="10.5"
+      letter-spacing="2"
+      fill="#A78BFA">LLM / RAG RESEARCH</text>
+
+<text x="700" y="183"
+      font-family="Segoe UI,Arial,sans-serif"
+      font-size="20"
+      font-weight="700"
+      fill="#F1F5F9">Domain-Grounded Retrieval</text>
+
+<text x="700" y="205"
+      font-family="Segoe UI,Arial,sans-serif"
+      font-size="11.5"
+      fill="#8190A5">Tiered retrieval + atomic claim verification</text>
+
+<!-- RAG PIPELINE -->
+<g font-family="JetBrains Mono,Consolas,monospace" text-anchor="middle">
+  <line x1="655" y1="270" x2="1125" y2="270"
+        stroke="#342C52" stroke-width="2"/>
+
+  <line x1="655" y1="270" x2="1125" y2="270"
+        stroke="url(#ragLine)"
+        stroke-width="2"
+        stroke-dasharray="5 9">
+    <animate attributeName="stroke-dashoffset"
+             values="0;-140"
+             dur="3.2s"
+             repeatCount="indefinite"/>
+  </line>
+
+  <circle cx="655" cy="270" r="7" fill="#A78BFA"/>
+  <circle cx="772" cy="270" r="7" fill="#A78BFA"/>
+  <circle cx="890" cy="270" r="7" fill="#8B5CF6"/>
+  <circle cx="1007" cy="270" r="7" fill="#7C3AED"/>
+  <circle cx="1125" cy="270" r="7" fill="#22D3EE"/>
+
+  <text x="655" y="245" font-size="9.5" fill="#CBD5E1">QUERY</text>
+  <text x="772" y="245" font-size="9.5" fill="#CBD5E1">RETRIEVE</text>
+  <text x="890" y="245" font-size="9.5" fill="#CBD5E1">CLAIM CHECK</text>
+  <text x="1007" y="245" font-size="9.5" fill="#CBD5E1">GROUND</text>
+  <text x="1125" y="245" font-size="9.5" fill="#CBD5E1">OUTPUT</text>
+</g>
+
+<text x="890" y="305"
+      text-anchor="middle"
+      font-family="Segoe UI,Arial,sans-serif"
+      font-size="11"
+      fill="#64748B">LangGraph · RAG · claim verification</text>
+
+<!-- RAG METRICS -->
+<line x1="650" y1="335" x2="1130" y2="335" stroke="#342C52"/>
+
+<g font-family="JetBrains Mono,Consolas,monospace">
+  <text x="650" y="375" font-size="25" font-weight="700" fill="#C4B5FD">83.7%</text>
+  <text x="650" y="395" font-size="10" fill="#817A99">TIMEQA V2 WIN RATE</text>
+
+  <text x="835" y="375" font-size="25" font-weight="700" fill="#C4B5FD">78.0%</text>
+  <text x="835" y="395" font-size="10" fill="#817A99">MMLU GLOBAL FACTS</text>
+
+  <text x="1025" y="375" font-size="25" font-weight="700" fill="#C4B5FD">650</text>
+  <text x="1025" y="395" font-size="10" fill="#817A99">EVALUATION QUERIES</text>
+</g>
+
+<text x="650" y="438"
+      font-family="Segoe UI,Arial,sans-serif"
+      font-size="11.5"
+      fill="#94A3B8">Research pipeline designed to reduce hallucination through</text>
+<text x="650" y="458"
+      font-family="Segoe UI,Arial,sans-serif"
+      font-size="11.5"
+      fill="#94A3B8">domain-grounded retrieval and claim-level verification.</text>
+
+<!-- SUBTLE ACTIVE SIGNALS -->
+<circle cx="580" cy="270" r="2.5" fill="#22D3EE" opacity=".8">
+  <animate attributeName="opacity" values=".2;1;.2" dur="1.8s" repeatCount="indefinite"/>
+</circle>
+
+<circle cx="620" cy="270" r="2.5" fill="#A78BFA" opacity=".8">
+  <animate attributeName="opacity" values=".2;1;.2" dur="2.1s" repeatCount="indefinite"/>
+</circle>
+
+<!-- FOOTER -->
+<line x1="60" y1="570" x2="1140" y2="570" stroke="#1F2937"/>
+<text x="600" y="590"
+      text-anchor="middle"
+      font-family="JetBrains Mono,Consolas,monospace"
+      font-size="9.5"
+      letter-spacing="1.5"
+      fill="#475569">SYSTEMS / IMPLEMENTATION / EVALUATION</text>
+
 </svg>
