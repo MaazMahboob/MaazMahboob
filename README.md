@@ -168,29 +168,14 @@ Regression-based machine learning project for used-car price estimation.
 <br/>
 
 <!-- ============================================================
-     GITHUB CONTRIBUTIONS
+     AI DATA AGENT
      ============================================================ -->
-
-<h3 align="center">GITHUB CONTRIBUTIONS</h3>
 
 <div align="center">
 
-<picture>
-
-  <source
-    media="(prefers-color-scheme: dark)"
-    srcset="https://raw.githubusercontent.com/MaazMahboob/MaazMahboob/output/snake-dark.svg" />
-
-  <source
-    media="(prefers-color-scheme: light)"
-    srcset="https://raw.githubusercontent.com/MaazMahboob/MaazMahboob/output/snake-light.svg" />
-
-  <img
-    src="https://raw.githubusercontent.com/MaazMahboob/MaazMahboob/output/snake-dark.svg"
-    width="100%"
-    alt="GitHub contribution activity" />
-
-</picture>
+<img src="./assets/ai-agent.gif"
+     width="700"
+     alt="AI agent processing incoming data through an AI core." />
 
 </div>
 
