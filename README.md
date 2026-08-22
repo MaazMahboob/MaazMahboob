@@ -16,19 +16,21 @@
      SELECTED SYSTEMS
      ============================================================ -->
 
-<h3 align="center">SELECTED SYSTEMS</h3>
-
 <div align="center">
+
 <img src="./assets/dual-systems.svg"
      width="100%"
      alt="Two selected AI systems: a clinical chest X-ray computer vision system and a domain-grounded LLM retrieval pipeline." />
+
 </div>
 
 <div align="center">
 
 [**→ Chest X-ray AI System**](https://github.com/MaazMahboob/AI-Chest-Xray-Disease-Detection-System)
+
 &nbsp;·&nbsp;
-**RAG Research:** *Mitigating LLM Hallucinations through Domain-Grounded Tiered Retrieval*
+
+[**→ RAG Research Paper**](https://arxiv.org/abs/2603.17872)
 
 </div>
 
@@ -38,12 +40,12 @@
      ENGINEERING CAPABILITIES
      ============================================================ -->
 
-<h3 align="center">ENGINEERING CAPABILITIES</h3>
-
 <div align="center">
+
 <img src="./assets/capability-matrix.svg"
      width="100%"
      alt="AI engineering capability map covering Computer Vision, LLM and RAG systems, Machine Learning, AI Engineering, programming, and data." />
+
 </div>
 
 <br/>
@@ -52,12 +54,12 @@
      EXPERIENCE
      ============================================================ -->
 
-<h3 align="center">EXPERIENCE</h3>
-
 <div align="center">
+
 <img src="./assets/experience-timeline.svg"
      width="100%"
-     alt="Chronological experience timeline: B.Tech in Artificial Intelligence, GNCIPL AI/ML internship, SURE Trust Python and ML internship, and current AI/ML engineering focus." />
+     alt="Chronological experience timeline covering B.Tech in Artificial Intelligence, GNCIPL AI/ML internship, SURE Trust Python and ML internship, and current AI/ML engineering focus." />
+
 </div>
 
 <br/>
@@ -66,12 +68,12 @@
      RESEARCH & PUBLICATIONS
      ============================================================ -->
 
-<h3 align="center">RESEARCH &amp; PUBLICATIONS</h3>
-
 <div align="center">
+
 <img src="./assets/research-core.svg"
      width="100%"
      alt="Research and publications covering biomedical NLP with PubMedBERT, domain-grounded LLM retrieval, and a medical imaging book chapter." />
+
 </div>
 
 <br/>
@@ -82,8 +84,6 @@
 
 <h3 align="center">MORE WORK &amp; ACHIEVEMENTS</h3>
 
-<div align="center">
-
 <table width="100%">
 <tr>
 
@@ -91,9 +91,9 @@
 
 ### Computer Vision
 
-**Real-Time Sign Language Recognition**
+**Sign Language Recognition**
 
-LSTM/GRU sequence models using MediaPipe Holistic landmarks for **50 ASL gestures**.
+LSTM/GRU sequence models with MediaPipe Holistic for **50 ASL gestures**.
 
 **99% / 98% accuracy**
 
@@ -107,12 +107,10 @@ LSTM/GRU sequence models using MediaPipe Holistic landmarks for **50 ASL gesture
 
 CTGAN-based class-imbalance work with XGBoost.
 
-**Loan Approval**
+**Loan Approval**  
+Deep ANN · **92.3% accuracy**
 
-Deep ANN model · **92.3% accuracy**
-
-**Customer Churn**
-
+**Customer Churn**  
 Random Forest · **86.4% accuracy**
 
 </td>
@@ -123,44 +121,22 @@ Random Forest · **86.4% accuracy**
 
 **Used Car Price Prediction**
 
-Machine learning project focused on regression-based used-car price estimation.
+Regression-based machine learning project for used-car price estimation.
 
 </td>
 
 </tr>
 </table>
-
-</div>
 
 <br/>
 
 <div align="center">
 
-<table width="100%">
-<tr>
-
-<td width="50%" valign="top">
-
-### Certifications
-
-- Machine Learning Specialization — Stanford / Coursera
-- Neural Networks and Deep Learning — DeepLearning.AI
-
-</td>
-
-<td width="50%" valign="top">
-
-### Achievement
-
-**GATE 2025**
-
-AIR **6991**  
-Data Science &amp; Artificial Intelligence
-
-</td>
-
-</tr>
-</table>
+| CERTIFICATIONS | ACHIEVEMENT |
+|:---:|:---:|
+| Machine Learning Specialization — Stanford / Coursera | **GATE 2025** |
+| Neural Networks and Deep Learning — DeepLearning.AI | **AIR 6991** |
+| | Data Science & Artificial Intelligence |
 
 </div>
 
@@ -182,43 +158,6 @@ Data Science &amp; Artificial Intelligence
 ![OpenCV](https://img.shields.io/badge/OpenCV-05070D?style=flat-square&logo=opencv&logoColor=22D3EE)
 ![Streamlit](https://img.shields.io/badge/Streamlit-05070D?style=flat-square&logo=streamlit&logoColor=8B5CF6)
 ![Git](https://img.shields.io/badge/Git-05070D?style=flat-square&logo=git&logoColor=06B6D4)
-
-</div>
-
-<br/>
-
-<!-- ============================================================
-     GITHUB ACTIVITY
-     ============================================================ -->
-
-<h3 align="center">GITHUB ACTIVITY</h3>
-
-<div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=MaazMahboob&show_icons=true&hide_border=true&bg_color=05070D&title_color=8B5CF6&icon_color=22D3EE&text_color=E5E7EB&hide=prs"
-     height="165"
-     alt="GitHub statistics" />
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MaazMahboob&layout=compact&hide_border=true&bg_color=05070D&title_color=8B5CF6&text_color=E5E7EB"
-     height="165"
-     alt="Most used programming languages" />
-
-<br/><br/>
-
-<picture>
-  <source
-    media="(prefers-color-scheme: dark)"
-    srcset="https://raw.githubusercontent.com/MaazMahboob/MaazMahboob/output/snake-dark.svg" />
-
-  <source
-    media="(prefers-color-scheme: light)"
-    srcset="https://raw.githubusercontent.com/MaazMahboob/MaazMahboob/output/snake-light.svg" />
-
-  <img
-    src="https://raw.githubusercontent.com/MaazMahboob/MaazMahboob/output/snake-dark.svg"
-    width="100%"
-    alt="GitHub contribution activity" />
-</picture>
 
 </div>
 
