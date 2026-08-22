@@ -1,46 +1,42 @@
-# Setup
+# Setup — v2
 
-## What changed from the last version
-
-- Colors: muted warm charcoal, brass/amber and dusty teal, instead of the violet/cyan MAAZ.OS palette. No neon.
-- Animation: the hero banner has small domain-words (vision, retrieval, signal, calibration, care, detection, focus) drifting slowly down the background, plus a soft breathing signal line and a bobbing arrow. All of it is time-based CSS, not hover-triggered — GitHub loads SVGs referenced in a README as static `<img>` sources, and `:hover` states inside an `<img>`-sourced SVG generally don't fire in any browser. Rather than ship a hover effect that would likely just sit there doing nothing once pushed, the interactive parts use native `<details>` / `<summary>` disclosure widgets instead (the "Research", "Projects" and "Experience" sections) — click to expand, and it's real, working interactivity.
-- One SVG asset instead of six, and one external stats widget instead of two — fewer moving parts, calmer page.
-
-## Before you push
-
-Fill in the real contact line at the bottom of `README.md` — it currently has placeholder text (`you@example.com`, `linkedin.com/in/your-handle`).
-
-## Push it (Windows cmd)
-
-Assuming you extracted this delivery to `C:\Users\maazm\Downloads\MaazMahboob-profile-v3` and your repo is already cloned at `C:\Users\maazm\MaazMahboob`:
+Same drill as before, just with the corrected/upgraded files. Copy everything from this
+folder into your local `MaazMahboob` repo clone, replacing the old versions:
 
 ```cmd
 cd C:\Users\maazm\MaazMahboob
 
-xcopy /E /I /Y "C:\Users\maazm\Downloads\MaazMahboob-profile-v3\assets" "assets"
-xcopy /E /I /Y "C:\Users\maazm\Downloads\MaazMahboob-profile-v3\.github" ".github"
-copy /Y "C:\Users\maazm\Downloads\MaazMahboob-profile-v3\README.md" "README.md"
-copy /Y "C:\Users\maazm\Downloads\MaazMahboob-profile-v3\SETUP.md" "SETUP.md"
-
-dir
-dir assets
+xcopy /E /I /Y "C:\path\to\this\folder\assets" "assets"
+xcopy /E /I /Y "C:\path\to\this\folder\.github" ".github"
+copy /Y "C:\path\to\this\folder\README.md" "README.md"
+copy /Y "C:\path\to\this\folder\SETUP.md" "SETUP.md"
 
 git add .
-git commit -m "v3: calm palette, ambient hero animation, click-to-expand sections"
+git commit -m "v2: fix hallucinated CTGAN attribution, equal-weight CV/RAG, real metrics, premium visual pass"
 git push origin main
 ```
 
-`xcopy /E /I /Y` copies whole folders including subfolders, which is what `assets` and `.github` need. `dir` and `dir assets` are there so you can eyeball that the files actually landed before you `git add .` — that's the step that silently failed last time.
+## What changed from v1
 
-## About the contribution snake
+- **Fixed hallucination**: CTGAN was incorrectly attributed to the chest X-ray flagship project.
+  It's actually from the GNCIPL stroke-risk project — now correctly placed there, with the
+  synthetic-to-real generalization gap called out honestly (that's a credibility signal, not
+  a weakness to hide).
+- **LLM/RAG work promoted to equal billing** with the computer vision system — both shown as
+  full-width flagship cards side by side, both with real benchmark numbers (83.7% win rate on
+  TimeQA v2, 78.0% on MMLU Global Facts).
+- **AI Engineering & Deployment added as its own category** — FastAPI, Pydantic, JWT/OAuth2,
+  PostgreSQL, Alembic, Celery, Docker Compose. This was completely missing before and it's the
+  part that signals "this person ships production systems," not just notebooks.
+- **All research entries now have real titles, venues, and metrics** pulled directly from your
+  resume, instead of vague one-line descriptions.
+- **Visual pass**: layered glass-panel cards with real drop shadows, staggered fade/rise reveal
+  timing on the hero instead of everything appearing at once, metric-chip badges, consistent
+  gradient system, better typographic hierarchy.
 
-The workflow in `.github/workflows/snake.yml` needs to run once before the image in the README will show anything. After you push:
+## Still open
 
-1. Go to the repo's **Actions** tab.
-2. Select **Generate contribution snake** on the left.
-3. Click **Run workflow** to trigger it manually the first time (it also runs automatically every night after that).
-4. Once it finishes, it creates (or updates) an `output` branch with the SVG the README points to. Refresh your profile page — it can take a minute for GitHub's cache to catch up.
-
-## Verifying it rendered
-
-Open `https://github.com/MaazMahboob` in a browser (not the repo page — your profile page). Hard-refresh with `Ctrl+Shift+R` if it looks stale.
+- If you have live links for the arXiv paper and IGI Global DOI, send them and I'll wire them
+  into the README/SVG text directly instead of the placeholder "→ arxiv.org" / "→ DOI link" labels.
+- The PubMedBERT paper is marked "Under Review" per your resume — update that the moment it's
+  accepted, since publication status is one of the first things a technical reviewer checks.
