@@ -1,104 +1,89 @@
-<svg width="1200" height="420" viewBox="0 0 1200 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Maaz Mahboob — AI/ML Engineer. Computer Vision and LLM/RAG. Building clinical AI systems and retrieval-grounded LLM pipelines.">
+<svg viewBox="0 0 1200 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Maaz Mahboob — computer vision and medical AI">
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#05070D"/>
-      <stop offset="45%" stop-color="#0A0E1A"/>
-      <stop offset="100%" stop-color="#0B1020"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1C1712"/>
+      <stop offset="100%" stop-color="#14110D"/>
     </linearGradient>
-    <linearGradient id="nameGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#22D3EE"/>
-      <stop offset="45%" stop-color="#8B5CF6"/>
-      <stop offset="100%" stop-color="#7C3AED"/>
-      <animate attributeName="x1" values="0%;20%;0%" dur="8s" repeatCount="indefinite"/>
-      <animate attributeName="x2" values="100%;120%;100%" dur="8s" repeatCount="indefinite"/>
+    <linearGradient id="arrowGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#C98A4B"/>
+      <stop offset="100%" stop-color="#5C7A78"/>
     </linearGradient>
-    <radialGradient id="glowA" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.30"/>
-      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0"/>
+    <radialGradient id="spot" cx="50%" cy="50%" r="46%">
+      <stop offset="0%" stop-color="#16130F" stop-opacity="0.9"/>
+      <stop offset="65%" stop-color="#16130F" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#16130F" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="glowB" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.22"/>
-      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0"/>
-    </radialGradient>
-    <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
-      <circle cx="1.2" cy="1.2" r="1.2" fill="#374151" opacity="0.5"/>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="1.2" cy="1.2" r="1.2" fill="#4A443B" opacity="0.4"/>
     </pattern>
-    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
-      <feGaussianBlur stdDeviation="7" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
-      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.45"/>
-    </filter>
   </defs>
 
-  <rect width="1200" height="420" fill="url(#bg)"/>
-  <rect width="1200" height="420" fill="url(#dots)"/>
-  <circle cx="980" cy="80" r="300" fill="url(#glowA)"/>
-  <circle cx="120" cy="380" r="260" fill="url(#glowB)"/>
+  <style>
+    text { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; }
+    .name { font-family: Georgia, 'Times New Roman', serif; }
+    .word { font-size: 15px; letter-spacing: 2px; }
+    .amber { fill: #C98A4B; }
+    .teal { fill: #5C7A78; }
+    .clay { fill: #A8613F; }
+    .w1 { animation: fall 24s linear infinite; animation-delay: 0s; }
+    .w2 { animation: fall 24s linear infinite; animation-delay: -4s; }
+    .w3 { animation: fall 24s linear infinite; animation-delay: -8s; }
+    .w4 { animation: fall 24s linear infinite; animation-delay: -12s; }
+    .w5 { animation: fall 24s linear infinite; animation-delay: -16s; }
+    .w6 { animation: fall 24s linear infinite; animation-delay: -20s; }
+    .w7 { animation: fall 24s linear infinite; animation-delay: -2s; }
+    @keyframes fall {
+      0%   { transform: translateY(-30px); opacity: 0; }
+      10%  { opacity: 0.45; }
+      82%  { opacity: 0.35; }
+      100% { transform: translateY(380px); opacity: 0; }
+    }
+    .pulse { animation: breathe 6s ease-in-out infinite; }
+    @keyframes breathe {
+      0%, 100% { opacity: 0.18; }
+      50% { opacity: 0.42; }
+    }
+    .arrow { animation: bob 2.8s ease-in-out infinite; }
+    @keyframes bob {
+      0%, 100% { transform: translateY(0px); opacity: 0.5; }
+      50% { transform: translateY(6px); opacity: 1; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .w1, .w2, .w3, .w4, .w5, .w6, .w7, .pulse, .arrow { animation: none; }
+      .w1, .w2, .w3, .w4, .w5, .w6, .w7 { opacity: 0; }
+      .pulse { opacity: 0.22; }
+      .arrow { opacity: 0.8; }
+    }
+  </style>
 
-  <g opacity="0">
-    <animate attributeName="opacity" values="0;1" dur="0.6s" begin="0.05s" fill="freeze"/>
-    <rect x="60" y="46" width="150" height="26" rx="13" fill="#111827" stroke="#22D3EE" stroke-opacity="0.4"/>
-    <circle cx="76" cy="59" r="4" fill="#22D3EE">
-      <animate attributeName="opacity" values="1;0.25;1" dur="2.2s" repeatCount="indefinite"/>
-    </circle>
-    <text x="88" y="63" font-family="JetBrains Mono, Consolas, monospace" font-size="11.5" letter-spacing="2" fill="#93C5FD">SYSTEM ONLINE</text>
+  <rect width="1200" height="340" fill="url(#bg)"/>
+  <rect width="1200" height="340" fill="url(#dots)"/>
+
+  <g>
+    <text x="80"   y="0" class="word amber w1">vision</text>
+    <text x="200"  y="0" class="word teal  w2">retrieval</text>
+    <text x="1000" y="0" class="word amber w3">signal</text>
+    <text x="1130" y="0" class="word teal  w4">calibration</text>
+    <text x="640"  y="0" class="word clay  w5">care</text>
+    <text x="40"   y="0" class="word teal  w6">detection</text>
+    <text x="1160" y="0" class="word amber w7">focus</text>
   </g>
 
-  <g opacity="0">
-    <animate attributeName="opacity" values="0;1" dur="0.7s" begin="0.15s" fill="freeze"/>
-    <text x="58" y="170" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="72" font-weight="800" fill="url(#nameGrad)" filter="url(#glow)">MAAZ MAHBOOB</text>
-  </g>
+  <rect width="1200" height="340" fill="url(#spot)"/>
 
-  <g opacity="0">
-    <animate attributeName="opacity" values="0;1" dur="0.7s" begin="0.35s" fill="freeze"/>
-    <text x="62" y="212" font-family="JetBrains Mono, Consolas, monospace" font-size="19" letter-spacing="1" fill="#E5E7EB">
-      AI/ML ENGINEER <tspan fill="#374151">//</tspan> <tspan fill="#22D3EE">COMPUTER VISION</tspan> <tspan fill="#374151">×</tspan> <tspan fill="#8B5CF6">LLM / RAG SYSTEMS</tspan>
-    </text>
-  </g>
+  <path class="pulse" d="M120,148 L430,148 L452,120 L472,176 L494,148 L1080,148"
+        fill="none" stroke="#9E9484" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
 
-  <g opacity="0">
-    <animate attributeName="opacity" values="0;1" dur="0.7s" begin="0.55s" fill="freeze"/>
-    <text x="62" y="248" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15.5" fill="#8B9DC3">Shipping clinical detection pipelines and retrieval-grounded LLM systems — not just notebooks.</text>
-  </g>
+  <text x="600" y="82" text-anchor="middle" class="mist" font-size="12" letter-spacing="3" fill="#9E9484">COMPUTER VISION &#183; MEDICAL AI</text>
 
-  <!-- metric chips -->
-  <g font-family="JetBrains Mono, Consolas, monospace" font-size="12.5">
-    <g opacity="0">
-      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.75s" fill="freeze"/>
-      <rect x="62" y="272" width="168" height="34" rx="17" fill="#111827" stroke="#7C3AED" stroke-opacity="0.45" filter="url(#softShadow)"/>
-      <text x="146" y="293" text-anchor="middle" fill="#C4B5FD">14 findings · 15K X-rays</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.9s" fill="freeze"/>
-      <rect x="240" y="272" width="140" height="34" rx="17" fill="#111827" stroke="#22D3EE" stroke-opacity="0.45" filter="url(#softShadow)"/>
-      <text x="310" y="293" text-anchor="middle" fill="#67E8F9">mAP@0.5 +30%</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="1.05s" fill="freeze"/>
-      <rect x="390" y="272" width="196" height="34" rx="17" fill="#111827" stroke="#8B5CF6" stroke-opacity="0.45" filter="url(#softShadow)"/>
-      <text x="488" y="293" text-anchor="middle" fill="#C4B5FD">RAG win-rate 83.7%</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="1.2s" fill="freeze"/>
-      <rect x="596" y="272" width="168" height="34" rx="17" fill="#111827" stroke="#06B6D4" stroke-opacity="0.45" filter="url(#softShadow)"/>
-      <text x="680" y="293" text-anchor="middle" fill="#67E8F9">3 publications</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="1.35s" fill="freeze"/>
-      <rect x="774" y="272" width="180" height="34" rx="17" fill="#111827" stroke="#7C3AED" stroke-opacity="0.45" filter="url(#softShadow)"/>
-      <text x="864" y="293" text-anchor="middle" fill="#C4B5FD">GATE AIR 6991</text>
-    </g>
-  </g>
+  <text x="600" y="158" text-anchor="middle" class="name" font-size="44" fill="#EDE6D9">Maaz Mahboob</text>
 
-  <line x1="60" y1="340" x2="1140" y2="340" stroke="#374151" stroke-opacity="0.4"/>
-  <g font-family="JetBrains Mono, Consolas, monospace" font-size="12" fill="#6B7280">
-    <text x="60" y="365">ZHCET · AMU — B.TECH ARTIFICIAL INTELLIGENCE · 2021–2025 · CPI 8.22</text>
-    <text x="60" y="390">ALIGARH, INDIA · OPEN TO AI/ML ENGINEER &amp; COMPUTER VISION ENGINEER ROLES</text>
-  </g>
+  <text x="600" y="192" text-anchor="middle" font-size="16" fill="#9E9484">Computer vision and medical AI. Building systems that fail safely.</text>
 
-  <rect x="0" y="0" width="4" height="420" fill="#7C3AED" opacity="0.85">
-    <animate attributeName="x" values="0;1196;0" dur="10s" repeatCount="indefinite"/>
-  </rect>
+  <text x="600" y="224" text-anchor="middle" font-size="12.5" fill="#8C8377">Aligarh, India &#183; B.Tech AI, AMU &#183; open to research collaboration</text>
+
+  <g class="arrow" transform="translate(600,268)">
+    <path d="M-9,-6 L0,4 L9,-6" fill="none" stroke="url(#arrowGrad)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="0" y="26" text-anchor="middle" font-size="11" letter-spacing="1.5" fill="#8C8377">FOCUS AREAS</text>
+  </g>
 </svg>
