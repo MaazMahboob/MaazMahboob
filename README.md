@@ -32,7 +32,7 @@
 
 &nbsp;·&nbsp;
 
-[**→ RAG Research Paper**](https://arxiv.org/)
+[**→ RAG Research Paper**]([https://arxiv.org/](https://arxiv.org/abs/2603.17872)
 
 </div>
 
