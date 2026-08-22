@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/hero.svg" width="100%" alt="Maaz Mahboob — AI/ML Engineer. Computer Vision, Deep Learning, Generative AI." />
+<img src="./assets/hero.svg" width="100%" alt="Maaz Mahboob — AI/ML Engineer. Computer Vision and LLM/RAG. Building clinical AI systems and retrieval-grounded LLM pipelines." />
 
 <br/>
 
@@ -12,119 +12,110 @@
 
 <br/>
 
-<!--
-  ============================================================
-  01 — MAAZ.OS · SYSTEM STATUS
-  ============================================================
--->
-
 <div align="center">
-<img src="./assets/maaz-os.svg" width="100%" alt="MAAZ.OS system status panel — computer vision online, machine learning online, generative AI active, RAG systems building, research active" />
+<img src="./assets/maaz-os.svg" width="100%" alt="MAAZ.OS status panel — 3 shipped systems, 3 publications, 15000 X-rays processed, 83.7% best RAG win rate" />
 </div>
 
 <br/>
 
 <!--
   ============================================================
-  02 — AI CAPABILITY MATRIX
+  TWO FLAGSHIP SYSTEMS — SHOWN AT EQUAL WEIGHT
+  ============================================================
+-->
+
+<div align="center">
+<img src="./assets/dual-systems.svg" width="100%" alt="Two flagship systems: a clinical chest X-ray computer vision pipeline, and a domain-grounded LLM retrieval-augmented generation research pipeline" />
+</div>
+
+<div align="center">
+
+[**→ Chest X-ray system on GitHub**](https://github.com/MaazMahboob/AI-Chest-Xray-Disease-Detection-System) &nbsp;·&nbsp; **RAG paper:** *Mitigating LLM Hallucinations through Domain-Grounded Tiered Retrieval*, arXiv 2026
+
+</div>
+
+<br/>
+
+<!--
+  ============================================================
+  AI CAPABILITY MATRIX
   ============================================================
 -->
 
 <h3 align="center">AI CAPABILITY MATRIX</h3>
 
 <div align="center">
-<img src="./assets/capability-matrix.svg" width="100%" alt="AI capability matrix: computer vision, generative AI and NLP, machine learning, engineering" />
+<img src="./assets/capability-matrix.svg" width="100%" alt="Capability matrix across computer vision, LLM and generative AI, machine learning, AI engineering, and core languages" />
 </div>
 
 <br/>
 
 <!--
   ============================================================
-  03 — FLAGSHIP PROJECT
+  RESEARCH & PUBLICATIONS
   ============================================================
 -->
 
-<h3 align="center">FLAGSHIP PROJECT — CHEST X-RAY DISEASE DETECTION SYSTEM</h3>
-
-<p align="center">
-An end-to-end computer vision system for detecting thoracic abnormalities in chest X-rays —<br/>
-built as a full pipeline, not a notebook: <b>detection → clinician review → LLM-assisted reporting → retraining</b>.
-</p>
+<h3 align="center">RESEARCH &amp; PUBLICATIONS</h3>
 
 <div align="center">
-<img src="./assets/pipeline-chestxray.svg" width="100%" alt="Chest X-ray AI pipeline: input scan, YOLO vision model, detection, physician review, LLM reporting via Ollama, human feedback, admin-triggered retraining" />
-</div>
-
-<table align="center">
-<tr>
-<td width="50%" valign="top">
-
-**What it does**
-- Object detection on chest radiographs using **YOLOv11 / YOLOv12**, with **Faster R-CNN** used as a comparative baseline
-- Class-imbalance handling on the training set using **CTGAN**-based synthetic augmentation
-- A **Streamlit** interface with role-based access (radiologist / admin views)
-
-</td>
-<td width="50%" valign="top">
-
-**What makes it a system, not a script**
-- A locally hosted LLM (via **Ollama**) drafts structured, radiology-style report text from detected findings
-- Clinician corrections are logged and feed an **admin-triggered retraining pipeline**
-- Data persistence via **SQLite**, with the pipeline versioned across dedicated training and app modules
-
-</td>
-</tr>
-</table>
-
-<div align="center">
-
-[**→ VIEW SYSTEM**](https://github.com/MaazMahboob/AI-Chest-Xray-Disease-Detection-System)
-
+<img src="./assets/research-core.svg" width="100%" alt="Three publications: PubMedBERT disease prediction (Springer, under review), LLM hallucination mitigation via tiered retrieval (arXiv), and multi-disease diagnosis for rural healthcare (IGI Global)" />
 </div>
 
 <br/>
 
 <!--
   ============================================================
-  04 — RESEARCH CORE
-  ============================================================
--->
-
-<h3 align="center">RESEARCH CORE</h3>
-
-<div align="center">
-<img src="./assets/research-core.svg" width="100%" alt="Research core connecting biomedical NLP (PubMedBERT), LLM/RAG systems (LangGraph), and medical computer vision (YOLO, Faster R-CNN)" />
-</div>
-
-<div align="center">
-
-| Research line | Contribution | Venue |
-|---|---|---|
-| Medical computer vision | First-authored chapter on multi-disease chest X-ray detection | IGI Global (book chapter) |
-| LLM / RAG systems | Co-authored, LangGraph-based retrieval-augmented generation | arXiv preprint |
-| Biomedical NLP | Co-authored, PubMedBERT-based work | Journal of Supercomputing (Springer) |
-
-</div>
-
-<br/>
-
-<!--
-  ============================================================
-  05 — EXPERIENCE
+  EXPERIENCE
   ============================================================
 -->
 
 <h3 align="center">EXPERIENCE</h3>
 
 <div align="center">
-<img src="./assets/experience-timeline.svg" width="100%" alt="Timeline: SURE Trust Python and ML internship, GNCIPL AI/ML internship, B.Tech in Artificial Intelligence from ZHCET AMU, moving toward AI/ML engineering roles" />
+<img src="./assets/experience-timeline.svg" width="100%" alt="Timeline: SURE Trust internship, GNCIPL AI/ML internship with an honest note on a synthetic-to-real generalization gap, and B.Tech in Artificial Intelligence" />
 </div>
 
 <br/>
 
 <!--
   ============================================================
-  06 — TECH STACK
+  ADDITIONAL PROJECTS & ACHIEVEMENTS
+  ============================================================
+-->
+
+<h3 align="center">ADDITIONAL PROJECTS &amp; ACHIEVEMENTS</h3>
+
+<table align="center" width="100%">
+<tr>
+<td width="34%" valign="top">
+
+**Real-Time Sign Language Recognition**
+LSTM/GRU sequence models on MediaPipe Holistic landmarks — 50 ASL gestures, **99% / 98%** accuracy.
+
+</td>
+<td width="33%" valign="top">
+
+**Stroke-Risk & Loan/Churn Models** *(GNCIPL)*
+Deep ANN loan-approval model at **92.3%** accuracy; Random Forest churn model at **86.4%** accuracy, with RFM feature engineering and K-Means segmentation.
+
+</td>
+<td width="33%" valign="top">
+
+**Certifications**
+Machine Learning Specialization — Stanford/Coursera
+Neural Networks and Deep Learning — DeepLearning.AI
+**GATE 2025** — AIR 6991 (Data Science & AI)
+
+</td>
+</tr>
+</table>
+
+<br/>
+
+<!--
+  ============================================================
+  TECH STACK
   ============================================================
 -->
 
@@ -134,12 +125,12 @@ built as a full pipeline, not a notebook: <b>detection → clinician review → 
 
 ![Python](https://img.shields.io/badge/Python-05070D?style=flat-square&logo=python&logoColor=22D3EE)
 ![PyTorch](https://img.shields.io/badge/PyTorch-05070D?style=flat-square&logo=pytorch&logoColor=8B5CF6)
+![FastAPI](https://img.shields.io/badge/FastAPI-05070D?style=flat-square&logo=fastapi&logoColor=06B6D4)
+![Docker](https://img.shields.io/badge/Docker-05070D?style=flat-square&logo=docker&logoColor=22D3EE)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-05070D?style=flat-square&logo=postgresql&logoColor=8B5CF6)
 ![OpenCV](https://img.shields.io/badge/OpenCV-05070D?style=flat-square&logo=opencv&logoColor=22D3EE)
 ![Streamlit](https://img.shields.io/badge/Streamlit-05070D?style=flat-square&logo=streamlit&logoColor=8B5CF6)
-![SQLite](https://img.shields.io/badge/SQLite-05070D?style=flat-square&logo=sqlite&logoColor=22D3EE)
-![Pandas](https://img.shields.io/badge/Pandas-05070D?style=flat-square&logo=pandas&logoColor=8B5CF6)
-![NumPy](https://img.shields.io/badge/NumPy-05070D?style=flat-square&logo=numpy&logoColor=22D3EE)
-![Git](https://img.shields.io/badge/Git-05070D?style=flat-square&logo=git&logoColor=8B5CF6)
+![Git](https://img.shields.io/badge/Git-05070D?style=flat-square&logo=git&logoColor=06B6D4)
 
 </div>
 
@@ -147,7 +138,7 @@ built as a full pipeline, not a notebook: <b>detection → clinician review → 
 
 <!--
   ============================================================
-  07 — GITHUB ACTIVITY
+  GITHUB ACTIVITY
   ============================================================
 -->
 
@@ -171,12 +162,6 @@ built as a full pipeline, not a notebook: <b>detection → clinician review → 
 </div>
 
 <br/>
-
-<!--
-  ============================================================
-  08 — CONNECT
-  ============================================================
--->
 
 <h3 align="center">CONNECT</h3>
 

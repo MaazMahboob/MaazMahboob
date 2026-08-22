@@ -1,40 +1,42 @@
-# Setup
+# Setup — v2
 
-I don't have push access to your GitHub account, so here's how to ship this.
+Same drill as before, just with the corrected/upgraded files. Copy everything from this
+folder into your local `MaazMahboob` repo clone, replacing the old versions:
 
-## 1. Push the files
+```cmd
+cd C:\Users\maazm\MaazMahboob
 
-```bash
-git clone https://github.com/MaazMahboob/MaazMahboob.git
-cd MaazMahboob
-# copy README.md, assets/, .github/ from this delivery into the repo root
+xcopy /E /I /Y "C:\path\to\this\folder\assets" "assets"
+xcopy /E /I /Y "C:\path\to\this\folder\.github" ".github"
+copy /Y "C:\path\to\this\folder\README.md" "README.md"
+copy /Y "C:\path\to\this\folder\SETUP.md" "SETUP.md"
+
 git add .
-git commit -m "Rebuild profile as MAAZ.OS system"
+git commit -m "v2: fix hallucinated CTGAN attribution, equal-weight CV/RAG, real metrics, premium visual pass"
 git push origin main
 ```
 
-## 2. Let the snake workflow run once
+## What changed from v1
 
-Go to **Actions → Generate Snake Contribution Animation → Run workflow** (or just wait for the next push).
-It creates an `output` branch with `snake-dark.svg` / `snake-light.svg`, which the README already links to.
-Nothing breaks before that — the images will just 404 silently in most renderers until the first run completes.
+- **Fixed hallucination**: CTGAN was incorrectly attributed to the chest X-ray flagship project.
+  It's actually from the GNCIPL stroke-risk project — now correctly placed there, with the
+  synthetic-to-real generalization gap called out honestly (that's a credibility signal, not
+  a weakness to hide).
+- **LLM/RAG work promoted to equal billing** with the computer vision system — both shown as
+  full-width flagship cards side by side, both with real benchmark numbers (83.7% win rate on
+  TimeQA v2, 78.0% on MMLU Global Facts).
+- **AI Engineering & Deployment added as its own category** — FastAPI, Pydantic, JWT/OAuth2,
+  PostgreSQL, Alembic, Celery, Docker Compose. This was completely missing before and it's the
+  part that signals "this person ships production systems," not just notebooks.
+- **All research entries now have real titles, venues, and metrics** pulled directly from your
+  resume, instead of vague one-line descriptions.
+- **Visual pass**: layered glass-panel cards with real drop shadows, staggered fade/rise reveal
+  timing on the hero instead of everything appearing at once, metric-chip badges, consistent
+  gradient system, better typographic hierarchy.
 
-## 3. Sanity-check the stats service
+## Still open
 
-`github-readme-stats.vercel.app` is the standard self-hostable stats widget and generally reliable, but if it's
-ever down or rate-limited for you, either wait it out or deploy your own instance (the project's README covers
-this) and swap the URL in the README's Activity section.
-
-## 4. What was verified vs. left out
-
-Everything in the README is backed by your resume, memory context, or the flagship repo's actual file tree
-(`ChestXrayApp/`, `BalancedChestXray/`, `data.yaml`, training/app notebooks — confirmed by inspecting the repo
-directly). No metrics, benchmark numbers, or claims were invented. If you later have hard numbers you're
-confident defending in an interview (mAP, precision/recall, dataset size), those are worth adding to the
-flagship section — right now it deliberately describes *what the system does* rather than inventing performance
-numbers that weren't in the source material.
-
-## 5. Note on citations
-
-I don't have live access to verify how Google Scholar / arXiv / Springer currently list your papers — if you
-want direct links added next to each entry in the Research Core table, send them over and I'll wire them in.
+- If you have live links for the arXiv paper and IGI Global DOI, send them and I'll wire them
+  into the README/SVG text directly instead of the placeholder "→ arxiv.org" / "→ DOI link" labels.
+- The PubMedBERT paper is marked "Under Review" per your resume — update that the moment it's
+  accepted, since publication status is one of the first things a technical reviewer checks.
