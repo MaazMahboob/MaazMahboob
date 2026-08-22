@@ -12,12 +12,6 @@
 
 <br/>
 
-<div align="center">
-<img src="./assets/maaz-os.svg" width="100%" alt="MAAZ.OS status panel — 3 shipped systems, 3 publications, 15000 X-rays processed, 83.7% best RAG win rate" />
-</div>
-
-<br/>
-
 <!--
   ============================================================
   TWO FLAGSHIP SYSTEMS — SHOWN AT EQUAL WEIGHT
