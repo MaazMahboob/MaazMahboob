@@ -3,32 +3,40 @@
      height="440"
      viewBox="0 0 1200 440"
      role="img"
-     aria-label="Research and publications">
+     aria-label="Academic work including two research publications and one medical imaging book chapter">
 
 <defs>
 
-  <linearGradient id="card1" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0" stop-color="#0D1722"/>
-    <stop offset="1" stop-color="#070D14"/>
+  <!-- CARD BACKGROUNDS -->
+
+  <linearGradient id="card1" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#0D1722"/>
+    <stop offset="100%" stop-color="#070D14"/>
   </linearGradient>
 
-  <linearGradient id="card2" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0" stop-color="#11101D"/>
-    <stop offset="1" stop-color="#090812"/>
+  <linearGradient id="card2" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#11101D"/>
+    <stop offset="100%" stop-color="#090812"/>
   </linearGradient>
 
-  <linearGradient id="card3" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0" stop-color="#12170D"/>
-    <stop offset="1" stop-color="#090D07"/>
+  <linearGradient id="card3" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#17140A"/>
+    <stop offset="100%" stop-color="#0B0A06"/>
   </linearGradient>
 
 </defs>
 
-<!-- BACKGROUND -->
+
+<!-- =========================================================
+     BACKGROUND
+     ========================================================= -->
 
 <rect width="1200" height="440" fill="#05070D"/>
 
-<!-- HEADER -->
+
+<!-- =========================================================
+     HEADER
+     ========================================================= -->
 
 <text x="600"
       y="34"
@@ -41,14 +49,17 @@
 RESEARCH &amp; PUBLICATIONS
 </text>
 
-<line x1="30" y1="48" x2="1170" y2="48"
+<line x1="30"
+      y1="48"
+      x2="1170"
+      y2="48"
       stroke="#1E293B"
       stroke-width="1"/>
 
 
 <!-- =========================================================
      CARD 01
-     CYAN / BIOMEDICAL NLP
+     BIOMEDICAL NLP
      ========================================================= -->
 
 <rect x="30"
@@ -67,7 +78,10 @@ RESEARCH &amp; PUBLICATIONS
       rx="2"
       fill="#22D3EE"/>
 
-<circle cx="57" cy="94" r="5" fill="#22D3EE"/>
+<circle cx="57"
+        cy="94"
+        r="5"
+        fill="#22D3EE"/>
 
 <text x="72"
       y="98"
@@ -76,7 +90,7 @@ RESEARCH &amp; PUBLICATIONS
       font-weight="700"
       letter-spacing="2"
       fill="#67E8F9">
-BIOMEDICAL NLP
+RESEARCH
 </text>
 
 <text x="366"
@@ -88,54 +102,80 @@ BIOMEDICAL NLP
 01 / 03
 </text>
 
+
+<!-- FIELD -->
+
 <text x="54"
-      y="130"
+      y="116"
       font-family="Arial, Helvetica, sans-serif"
-      font-size="17"
+      font-size="9"
+      font-weight="700"
+      letter-spacing="1.5"
+      fill="#38BDF8">
+BIOMEDICAL NLP
+</text>
+
+
+<!-- TITLE -->
+
+<text x="54"
+      y="143"
+      font-family="Arial, Helvetica, sans-serif"
+      font-size="16"
       font-weight="700"
       fill="#F8FAFC">
 Symptoms-Based Disease
 </text>
 
 <text x="54"
-      y="153"
+      y="165"
       font-family="Arial, Helvetica, sans-serif"
-      font-size="17"
+      font-size="16"
       font-weight="700"
       fill="#F8FAFC">
 Prediction &amp; Recommendation
 </text>
 
 <text x="54"
-      y="176"
+      y="187"
       font-family="Arial, Helvetica, sans-serif"
-      font-size="17"
+      font-size="16"
       font-weight="700"
       fill="#F8FAFC">
 Using NLP Query &amp; PubMedBERT
 </text>
 
+
+<!-- PUBLICATION -->
+
 <text x="54"
-      y="204"
+      y="211"
       font-family="Arial, Helvetica, sans-serif"
-      font-size="11"
+      font-size="10.5"
       fill="#94A3B8">
 International Journal of Information Technology
 </text>
 
 <text x="54"
-      y="222"
+      y="227"
       font-family="Arial, Helvetica, sans-serif"
-      font-size="10"
+      font-size="9.5"
       fill="#64748B">
 SPRINGER · UNDER REVIEW · 2026
 </text>
 
-<line x1="54" y1="244" x2="366" y2="244"
+
+<line x1="54"
+      y1="244"
+      x2="366"
+      y2="244"
       stroke="#263241"/>
 
+
+<!-- RESULT -->
+
 <text x="54"
-      y="284"
+      y="281"
       font-family="Arial, Helvetica, sans-serif"
       font-size="34"
       font-weight="700"
@@ -144,9 +184,9 @@ SPRINGER · UNDER REVIEW · 2026
 </text>
 
 <text x="56"
-      y="304"
+      y="300"
       font-family="Arial, Helvetica, sans-serif"
-      font-size="10"
+      font-size="9.5"
       font-weight="700"
       letter-spacing="1"
       fill="#67E8F9">
@@ -154,62 +194,55 @@ TEST ACCURACY
 </text>
 
 <text x="56"
-      y="323"
+      y="317"
       font-family="Arial, Helvetica, sans-serif"
-      font-size="10"
+      font-size="9.5"
       fill="#64748B">
-Across 41 disease classes
+41 disease classes
 </text>
+
+
+<!-- DESCRIPTION -->
 
 <text x="54"
-      y="354"
+      y="344"
       font-family="Arial, Helvetica, sans-serif"
-      font-size="10"
-      font-weight="700"
-      fill="#64748B">
-MODEL
-</text>
-
-<text x="105"
-      y="354"
-      font-family="Arial, Helvetica, sans-serif"
-      font-size="10"
-      fill="#CBD5E1">
-PubMedBERT
-</text>
-
-<text x="54"
-      y="374"
-      font-family="Arial, Helvetica, sans-serif"
-      font-size="10"
-      font-weight="700"
-      fill="#64748B">
-PIPELINE
-</text>
-
-<text x="105"
-      y="374"
-      font-family="Arial, Helvetica, sans-serif"
-      font-size="10"
-      fill="#CBD5E1">
-Hybrid NLP / Disease Prediction
-</text>
-
-<text x="366"
-      y="395"
-      text-anchor="end"
-      font-family="Arial, Helvetica, sans-serif"
-      font-size="10"
+      font-size="9.5"
       font-weight="700"
       letter-spacing="1"
-      fill="#67E8F9">
-VIEW PAPER →
+      fill="#64748B">
+RESEARCH FOCUS
 </text>
+
+<text x="54"
+      y="363"
+      font-family="Arial, Helvetica, sans-serif"
+      font-size="9.5"
+      fill="#CBD5E1">
+Predicts disease from natural-language symptom queries
+</text>
+
+<text x="54"
+      y="380"
+      font-family="Arial, Helvetica, sans-serif"
+      font-size="9.5"
+      fill="#CBD5E1">
+using a fine-tuned PubMedBERT NLP pipeline.
+</text>
+
+<text x="54"
+      y="398"
+      font-family="Arial, Helvetica, sans-serif"
+      font-size="9"
+      fill="#475569">
+NLP · Disease Prediction · Clinical Decision Support
+</text>
+
 
 
 <!-- =========================================================
      CARD 02
-     VIOLET / LLM RAG
+     LLM / RAG
      ========================================================= -->
 
 <rect x="420"
@@ -228,7 +261,10 @@ VIEW PAPER →
       rx="2"
       fill="#8B5CF6"/>
 
-<circle cx="447" cy="94" r="5" fill="#A78BFA"/>
+<circle cx="447"
+        cy="94"
+        r="5"
+        fill="#A78BFA"/>
 
 <text x="462"
       y="98"
@@ -237,7 +273,7 @@ VIEW PAPER →
       font-weight="700"
       letter-spacing="2"
       fill="#C4B5FD">
-LLM / RAG
+RESEARCH
 </text>
 
 <text x="756"
@@ -249,54 +285,80 @@ LLM / RAG
 02 / 03
 </text>
 
+
+<!-- FIELD -->
+
 <text x="444"
-      y="130"
+      y="116"
       font-family="Arial, Helvetica, sans-serif"
-      font-size="17"
+      font-size="9"
+      font-weight="700"
+      letter-spacing="1.5"
+      fill="#A78BFA">
+LLM / RETRIEVAL INTELLIGENCE
+</text>
+
+
+<!-- TITLE -->
+
+<text x="444"
+      y="143"
+      font-family="Arial, Helvetica, sans-serif"
+      font-size="16"
       font-weight="700"
       fill="#F8FAFC">
 Mitigating LLM Hallucinations
 </text>
 
 <text x="444"
-      y="153"
+      y="165"
       font-family="Arial, Helvetica, sans-serif"
-      font-size="17"
+      font-size="16"
       font-weight="700"
       fill="#F8FAFC">
 through Domain-Grounded
 </text>
 
 <text x="444"
-      y="176"
+      y="187"
       font-family="Arial, Helvetica, sans-serif"
-      font-size="17"
+      font-size="16"
       font-weight="700"
       fill="#F8FAFC">
 Tiered Retrieval
 </text>
 
+
+<!-- PUBLICATION -->
+
 <text x="444"
-      y="204"
+      y="211"
       font-family="Arial, Helvetica, sans-serif"
-      font-size="11"
+      font-size="10.5"
       fill="#94A3B8">
 arXiv preprint · 2026
 </text>
 
 <text x="444"
-      y="222"
+      y="227"
       font-family="Arial, Helvetica, sans-serif"
-      font-size="10"
+      font-size="9.5"
       fill="#64748B">
 LangGraph · Retrieval · Claim Verification
 </text>
 
-<line x1="444" y1="244" x2="756" y2="244"
+
+<line x1="444"
+      y1="244"
+      x2="756"
+      y2="244"
       stroke="#263241"/>
 
+
+<!-- RESULT -->
+
 <text x="444"
-      y="284"
+      y="281"
       font-family="Arial, Helvetica, sans-serif"
       font-size="34"
       font-weight="700"
@@ -305,9 +367,9 @@ LangGraph · Retrieval · Claim Verification
 </text>
 
 <text x="446"
-      y="304"
+      y="300"
       font-family="Arial, Helvetica, sans-serif"
-      font-size="10"
+      font-size="9.5"
       font-weight="700"
       letter-spacing="1"
       fill="#C4B5FD">
@@ -315,53 +377,55 @@ WIN RATE
 </text>
 
 <text x="446"
-      y="323"
+      y="317"
       font-family="Arial, Helvetica, sans-serif"
-      font-size="10"
+      font-size="9.5"
       fill="#64748B">
 TimeQA v2 · 650 queries
 </text>
 
-<text x="444"
-      y="354"
-      font-family="Arial, Helvetica, sans-serif"
-      font-size="10"
-      font-weight="700"
-      fill="#64748B">
-PIPELINE
-</text>
 
-<text x="510"
-      y="354"
-      font-family="Arial, Helvetica, sans-serif"
-      font-size="10"
-      fill="#CBD5E1">
-Four-phase LangGraph RAG
-</text>
+<!-- DESCRIPTION -->
 
 <text x="444"
-      y="374"
+      y="344"
       font-family="Arial, Helvetica, sans-serif"
-      font-size="10"
-      fill="#CBD5E1">
-Atomic claim verification · 78.0% MMLU
-</text>
-
-<text x="756"
-      y="395"
-      text-anchor="end"
-      font-family="Arial, Helvetica, sans-serif"
-      font-size="10"
+      font-size="9.5"
       font-weight="700"
       letter-spacing="1"
-      fill="#C4B5FD">
-VIEW PAPER →
+      fill="#64748B">
+RESEARCH FOCUS
 </text>
+
+<text x="444"
+      y="363"
+      font-family="Arial, Helvetica, sans-serif"
+      font-size="9.5"
+      fill="#CBD5E1">
+Reduces LLM hallucinations through domain-grounded
+</text>
+
+<text x="444"
+      y="380"
+      font-family="Arial, Helvetica, sans-serif"
+      font-size="9.5"
+      fill="#CBD5E1">
+tiered retrieval and atomic claim-level verification.
+</text>
+
+<text x="444"
+      y="398"
+      font-family="Arial, Helvetica, sans-serif"
+      font-size="9"
+      fill="#475569">
+RAG · LangGraph · Verification · Grounded Generation
+</text>
+
 
 
 <!-- =========================================================
      CARD 03
-     AMBER / MEDICAL COMPUTER VISION
+     BOOK CHAPTER
      ========================================================= -->
 
 <rect x="810"
@@ -380,16 +444,19 @@ VIEW PAPER →
       rx="2"
       fill="#F59E0B"/>
 
-<circle cx="837" cy="94" r="5" fill="#F59E0B"/>
+<circle cx="837"
+        cy="94"
+        r="5"
+        fill="#F59E0B"/>
 
 <text x="852"
       y="98"
       font-family="Arial, Helvetica, sans-serif"
       font-size="11"
       font-weight="700"
-      letter-spacing="1.5"
+      letter-spacing="2"
       fill="#FBBF24">
-MEDICAL COMPUTER VISION
+BOOK CHAPTER
 </text>
 
 <text x="1146"
@@ -401,54 +468,80 @@ MEDICAL COMPUTER VISION
 03 / 03
 </text>
 
+
+<!-- FIELD -->
+
 <text x="834"
-      y="130"
+      y="116"
       font-family="Arial, Helvetica, sans-serif"
-      font-size="17"
+      font-size="9"
+      font-weight="700"
+      letter-spacing="1.5"
+      fill="#FBBF24">
+MEDICAL COMPUTER VISION
+</text>
+
+
+<!-- TITLE -->
+
+<text x="834"
+      y="143"
+      font-family="Arial, Helvetica, sans-serif"
+      font-size="16"
       font-weight="700"
       fill="#F8FAFC">
 AI-Driven Multi-Disease
 </text>
 
 <text x="834"
-      y="153"
+      y="165"
       font-family="Arial, Helvetica, sans-serif"
-      font-size="17"
+      font-size="16"
       font-weight="700"
       fill="#F8FAFC">
 Diagnosis Using Medical Imaging
 </text>
 
 <text x="834"
-      y="176"
+      y="187"
       font-family="Arial, Helvetica, sans-serif"
-      font-size="17"
+      font-size="16"
       font-weight="700"
       fill="#F8FAFC">
 for Rural Healthcare
 </text>
 
+
+<!-- PUBLICATION -->
+
 <text x="834"
-      y="204"
+      y="211"
       font-family="Arial, Helvetica, sans-serif"
-      font-size="11"
+      font-size="10.5"
       fill="#94A3B8">
-IGI Global · 2026 · Book Chapter
+IGI Global · 2026
 </text>
 
 <text x="834"
-      y="222"
+      y="227"
       font-family="Arial, Helvetica, sans-serif"
-      font-size="10"
+      font-size="9.5"
       fill="#64748B">
-Medical Imaging · Object Detection
+Book Chapter · Medical Imaging
 </text>
 
-<line x1="834" y1="244" x2="1146" y2="244"
+
+<line x1="834"
+      y1="244"
+      x2="1146"
+      y2="244"
       stroke="#263241"/>
 
+
+<!-- KEY CONTRIBUTION -->
+
 <text x="834"
-      y="284"
+      y="281"
       font-family="Arial, Helvetica, sans-serif"
       font-size="34"
       font-weight="700"
@@ -457,9 +550,9 @@ Medical Imaging · Object Detection
 </text>
 
 <text x="836"
-      y="304"
+      y="300"
       font-family="Arial, Helvetica, sans-serif"
-      font-size="10"
+      font-size="9.5"
       font-weight="700"
       letter-spacing="1"
       fill="#FBBF24">
@@ -467,47 +560,49 @@ THORACIC ABNORMALITIES
 </text>
 
 <text x="836"
-      y="323"
+      y="317"
       font-family="Arial, Helvetica, sans-serif"
-      font-size="10"
+      font-size="9.5"
       fill="#64748B">
-Localized through medical imaging
+Covered through medical imaging
 </text>
+
+
+<!-- CHAPTER DESCRIPTION -->
 
 <text x="834"
-      y="354"
+      y="344"
       font-family="Arial, Helvetica, sans-serif"
-      font-size="10"
-      font-weight="700"
-      fill="#64748B">
-MODELS
-</text>
-
-<text x="890"
-      y="354"
-      font-family="Arial, Helvetica, sans-serif"
-      font-size="10"
-      fill="#CBD5E1">
-YOLOv11 / Faster R-CNN
-</text>
-
-<text x="834"
-      y="374"
-      font-family="Arial, Helvetica, sans-serif"
-      font-size="10"
-      fill="#CBD5E1">
-Resource-constrained healthcare settings
-</text>
-
-<text x="1146"
-      y="395"
-      text-anchor="end"
-      font-family="Arial, Helvetica, sans-serif"
-      font-size="10"
+      font-size="9.5"
       font-weight="700"
       letter-spacing="1"
-      fill="#FBBF24">
-VIEW CHAPTER →
+      fill="#64748B">
+CHAPTER FOCUS
 </text>
+
+<text x="834"
+      y="363"
+      font-family="Arial, Helvetica, sans-serif"
+      font-size="9.5"
+      fill="#CBD5E1">
+Explores AI-based medical imaging for multi-disease
+</text>
+
+<text x="834"
+      y="380"
+      font-family="Arial, Helvetica, sans-serif"
+      font-size="9.5"
+      fill="#CBD5E1">
+diagnosis in resource-constrained rural healthcare.
+</text>
+
+<text x="834"
+      y="398"
+      font-family="Arial, Helvetica, sans-serif"
+      font-size="9"
+      fill="#475569">
+YOLOv11 · Faster R-CNN · Medical Imaging
+</text>
+
 
 </svg>
