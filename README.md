@@ -1,119 +1,176 @@
 <div align="center">
 
-<img src="./assets/hero.svg" width="100%" alt="Maaz Mahboob — AI/ML Engineer. Computer Vision and LLM/RAG. Building clinical AI systems and retrieval-grounded LLM pipelines." />
+<img src="./assets/hero.svg" width="100%" alt="Maaz Mahboob — AI/ML Engineer focused on Computer Vision and LLM/RAG systems." />
 
 <br/>
 
 [![Portfolio](https://img.shields.io/badge/PORTFOLIO-maazmahboob.github.io-0B1020?style=for-the-badge&labelColor=05070D&color=7C3AED)](https://maazmahboob.github.io/)
 [![LinkedIn](https://img.shields.io/badge/LINKEDIN-connect-0B1020?style=for-the-badge&labelColor=05070D&color=06B6D4)](https://www.linkedin.com/in/maaz-mahboob-763374269/)
-[![Flagship](https://img.shields.io/badge/FLAGSHIP-chest--xray--ai-0B1020?style=for-the-badge&labelColor=05070D&color=22D3EE)](https://github.com/MaazMahboob/AI-Chest-Xray-Disease-Detection-System)
+[![GitHub](https://img.shields.io/badge/GITHUB-MaazMahboob-0B1020?style=for-the-badge&labelColor=05070D&color=22D3EE)](https://github.com/MaazMahboob)
 
 </div>
 
 <br/>
 
-<!--
-  ============================================================
-  TWO FLAGSHIP SYSTEMS — SHOWN AT EQUAL WEIGHT
-  ============================================================
--->
+<!-- ============================================================
+     SELECTED SYSTEMS
+     ============================================================ -->
+
+<h3 align="center">SELECTED SYSTEMS</h3>
 
 <div align="center">
-<img src="./assets/dual-systems.svg" width="100%" alt="Two flagship systems: a clinical chest X-ray computer vision pipeline, and a domain-grounded LLM retrieval-augmented generation research pipeline" />
+<img src="./assets/dual-systems.svg"
+     width="100%"
+     alt="Two selected AI systems: a clinical chest X-ray computer vision system and a domain-grounded LLM retrieval pipeline." />
 </div>
 
 <div align="center">
 
-[**→ Chest X-ray system on GitHub**](https://github.com/MaazMahboob/AI-Chest-Xray-Disease-Detection-System) &nbsp;·&nbsp; **RAG paper:** *Mitigating LLM Hallucinations through Domain-Grounded Tiered Retrieval*, arXiv 2026
+[**→ Chest X-ray AI System**](https://github.com/MaazMahboob/AI-Chest-Xray-Disease-Detection-System)
+&nbsp;·&nbsp;
+**RAG Research:** *Mitigating LLM Hallucinations through Domain-Grounded Tiered Retrieval*
 
-</div>
-
-<br/>
-
-<!--
-  ============================================================
-  AI CAPABILITY MATRIX
-  ============================================================
--->
-
-<h3 align="center">AI CAPABILITY MATRIX</h3>
-
-<div align="center">
-<img src="./assets/capability-matrix.svg" width="100%" alt="Capability matrix across computer vision, LLM and generative AI, machine learning, AI engineering, and core languages" />
 </div>
 
 <br/>
 
-<!--
-  ============================================================
-  RESEARCH & PUBLICATIONS
-  ============================================================
--->
+<!-- ============================================================
+     ENGINEERING CAPABILITIES
+     ============================================================ -->
 
-<h3 align="center">RESEARCH &amp; PUBLICATIONS</h3>
+<h3 align="center">ENGINEERING CAPABILITIES</h3>
 
 <div align="center">
-<img src="./assets/research-core.svg" width="100%" alt="Three publications: PubMedBERT disease prediction (Springer, under review), LLM hallucination mitigation via tiered retrieval (arXiv), and multi-disease diagnosis for rural healthcare (IGI Global)" />
+<img src="./assets/capability-matrix.svg"
+     width="100%"
+     alt="AI engineering capability map covering Computer Vision, LLM and RAG systems, Machine Learning, AI Engineering, programming, and data." />
 </div>
 
 <br/>
 
-<!--
-  ============================================================
-  EXPERIENCE
-  ============================================================
--->
+<!-- ============================================================
+     EXPERIENCE
+     ============================================================ -->
 
 <h3 align="center">EXPERIENCE</h3>
 
 <div align="center">
-<img src="./assets/experience-timeline.svg" width="100%" alt="Timeline: SURE Trust internship, GNCIPL AI/ML internship with an honest note on a synthetic-to-real generalization gap, and B.Tech in Artificial Intelligence" />
+<img src="./assets/experience-timeline.svg"
+     width="100%"
+     alt="Chronological experience timeline: B.Tech in Artificial Intelligence, GNCIPL AI/ML internship, SURE Trust Python and ML internship, and current AI/ML engineering focus." />
 </div>
 
 <br/>
 
-<!--
-  ============================================================
-  ADDITIONAL PROJECTS & ACHIEVEMENTS
-  ============================================================
--->
+<!-- ============================================================
+     RESEARCH & PUBLICATIONS
+     ============================================================ -->
 
-<h3 align="center">ADDITIONAL PROJECTS &amp; ACHIEVEMENTS</h3>
+<h3 align="center">RESEARCH &amp; PUBLICATIONS</h3>
 
-<table align="center" width="100%">
-<tr>
-<td width="34%" valign="top">
-
-**Real-Time Sign Language Recognition**
-LSTM/GRU sequence models on MediaPipe Holistic landmarks — 50 ASL gestures, **99% / 98%** accuracy.
-
-</td>
-<td width="33%" valign="top">
-
-**Stroke-Risk & Loan/Churn Models** *(GNCIPL)*
-Deep ANN loan-approval model at **92.3%** accuracy; Random Forest churn model at **86.4%** accuracy, with RFM feature engineering and K-Means segmentation.
-
-</td>
-<td width="33%" valign="top">
-
-**Certifications**
-Machine Learning Specialization — Stanford/Coursera
-Neural Networks and Deep Learning — DeepLearning.AI
-**GATE 2025** — AIR 6991 (Data Science & AI)
-
-</td>
-</tr>
-</table>
+<div align="center">
+<img src="./assets/research-core.svg"
+     width="100%"
+     alt="Research and publications covering biomedical NLP with PubMedBERT, domain-grounded LLM retrieval, and a medical imaging book chapter." />
+</div>
 
 <br/>
 
-<!--
-  ============================================================
-  TECH STACK
-  ============================================================
--->
+<!-- ============================================================
+     MORE WORK & ACHIEVEMENTS
+     ============================================================ -->
 
-<h3 align="center">TECH STACK</h3>
+<h3 align="center">MORE WORK &amp; ACHIEVEMENTS</h3>
+
+<div align="center">
+
+<table width="100%">
+<tr>
+
+<td width="33%" valign="top">
+
+### Computer Vision
+
+**Real-Time Sign Language Recognition**
+
+LSTM/GRU sequence models using MediaPipe Holistic landmarks for **50 ASL gestures**.
+
+**99% / 98% accuracy**
+
+</td>
+
+<td width="33%" valign="top">
+
+### Machine Learning
+
+**Stroke-Risk Prediction**
+
+CTGAN-based class-imbalance work with XGBoost.
+
+**Loan Approval**
+
+Deep ANN model · **92.3% accuracy**
+
+**Customer Churn**
+
+Random Forest · **86.4% accuracy**
+
+</td>
+
+<td width="33%" valign="top">
+
+### Academic Project
+
+**Used Car Price Prediction**
+
+Machine learning project focused on regression-based used-car price estimation.
+
+</td>
+
+</tr>
+</table>
+
+</div>
+
+<br/>
+
+<div align="center">
+
+<table width="100%">
+<tr>
+
+<td width="50%" valign="top">
+
+### Certifications
+
+- Machine Learning Specialization — Stanford / Coursera
+- Neural Networks and Deep Learning — DeepLearning.AI
+
+</td>
+
+<td width="50%" valign="top">
+
+### Achievement
+
+**GATE 2025**
+
+AIR **6991**  
+Data Science &amp; Artificial Intelligence
+
+</td>
+
+</tr>
+</table>
+
+</div>
+
+<br/>
+
+<!-- ============================================================
+     TOOLS
+     ============================================================ -->
+
+<h3 align="center">TOOLS I WORK WITH</h3>
 
 <div align="center">
 
@@ -130,43 +187,61 @@ Neural Networks and Deep Learning — DeepLearning.AI
 
 <br/>
 
-<!--
-  ============================================================
-  GITHUB ACTIVITY
-  ============================================================
--->
+<!-- ============================================================
+     GITHUB ACTIVITY
+     ============================================================ -->
 
 <h3 align="center">GITHUB ACTIVITY</h3>
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=MaazMahboob&show_icons=true&hide_border=true&bg_color=05070D&title_color=8B5CF6&icon_color=22D3EE&text_color=E5E7EB&hide=prs" height="165" alt="GitHub stats for MaazMahboob" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MaazMahboob&layout=compact&hide_border=true&bg_color=05070D&title_color=8B5CF6&text_color=E5E7EB" height="165" alt="Most used languages for MaazMahboob" />
+<img src="https://github-readme-stats.vercel.app/api?username=MaazMahboob&show_icons=true&hide_border=true&bg_color=05070D&title_color=8B5CF6&icon_color=22D3EE&text_color=E5E7EB&hide=prs"
+     height="165"
+     alt="GitHub statistics" />
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MaazMahboob&layout=compact&hide_border=true&bg_color=05070D&title_color=8B5CF6&text_color=E5E7EB"
+     height="165"
+     alt="Most used programming languages" />
 
 <br/><br/>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MaazMahboob/MaazMahboob/output/snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MaazMahboob/MaazMahboob/output/snake-light.svg" />
-  <img src="https://raw.githubusercontent.com/MaazMahboob/MaazMahboob/output/snake-dark.svg" width="100%" alt="Contribution snake animation" />
-</picture>
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="https://raw.githubusercontent.com/MaazMahboob/MaazMahboob/output/snake-dark.svg" />
 
-<sub>Generated automatically by <code>.github/workflows/snake.yml</code> — appears after the first workflow run.</sub>
+  <source
+    media="(prefers-color-scheme: light)"
+    srcset="https://raw.githubusercontent.com/MaazMahboob/MaazMahboob/output/snake-light.svg" />
+
+  <img
+    src="https://raw.githubusercontent.com/MaazMahboob/MaazMahboob/output/snake-dark.svg"
+    width="100%"
+    alt="GitHub contribution activity" />
+</picture>
 
 </div>
 
 <br/>
+
+<!-- ============================================================
+     CONNECT
+     ============================================================ -->
 
 <h3 align="center">CONNECT</h3>
 
 <div align="center">
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-maazmahboob.github.io-111827?style=flat-square&logoColor=22D3EE)](https://maazmahboob.github.io/)
+
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Maaz_Mahboob-111827?style=flat-square&logo=linkedin&logoColor=06B6D4)](https://www.linkedin.com/in/maaz-mahboob-763374269/)
+
 [![GitHub](https://img.shields.io/badge/GitHub-MaazMahboob-111827?style=flat-square&logo=github&logoColor=E5E7EB)](https://github.com/MaazMahboob)
 
 </div>
 
 <div align="center">
+
 <sub>Aligarh, India · Open to AI/ML Engineer and Computer Vision Engineer roles</sub>
+
 </div>
