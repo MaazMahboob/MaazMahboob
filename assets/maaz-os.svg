@@ -1,0 +1,75 @@
+<svg width="1200" height="420" viewBox="0 0 1200 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="MAAZ.OS system status panel showing active capabilities">
+  <defs>
+    <linearGradient id="panelBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1020"/>
+      <stop offset="100%" stop-color="#05070D"/>
+    </linearGradient>
+    <linearGradient id="barActive" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22D3EE"/>
+      <stop offset="100%" stop-color="#7C3AED"/>
+    </linearGradient>
+    <pattern id="grid2" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M 36 0 L 0 0 0 36" fill="none" stroke="#1F2937" stroke-width="1" opacity="0.3"/>
+    </pattern>
+  </defs>
+
+  <rect x="1" y="1" width="1198" height="418" rx="18" fill="url(#panelBg)" stroke="#22D3EE" stroke-opacity="0.25"/>
+  <rect x="1" y="1" width="1198" height="418" rx="18" fill="url(#grid2)"/>
+
+  <!-- window chrome -->
+  <circle cx="34" cy="34" r="6" fill="#7C3AED" opacity="0.7"/>
+  <circle cx="56" cy="34" r="6" fill="#8B5CF6" opacity="0.7"/>
+  <circle cx="78" cy="34" r="6" fill="#22D3EE" opacity="0.7"/>
+  <text x="600" y="39" text-anchor="middle" font-family="JetBrains Mono, Consolas, monospace" font-size="13" letter-spacing="4" fill="#93C5FD">MAAZ.OS — SYSTEM STATUS</text>
+
+  <line x1="30" y1="58" x2="1170" y2="58" stroke="#374151" stroke-opacity="0.5"/>
+
+  <!-- status rows -->
+  <g font-family="JetBrains Mono, Consolas, monospace" font-size="15" fill="#E5E7EB">
+
+    <text x="50" y="100">COMPUTER VISION</text>
+    <text x="1050" y="100" fill="#22D3EE" text-anchor="end">ONLINE</text>
+    <rect x="50" y="110" width="1100" height="4" rx="2" fill="#1F2937"/>
+    <rect x="50" y="110" width="1100" height="4" rx="2" fill="url(#barActive)">
+      <animate attributeName="width" values="0;1100;1100" dur="2.2s" fill="freeze"/>
+    </rect>
+
+    <text x="50" y="150">MACHINE LEARNING</text>
+    <text x="1050" y="150" fill="#22D3EE" text-anchor="end">ONLINE</text>
+    <rect x="50" y="160" width="1100" height="4" rx="2" fill="#1F2937"/>
+    <rect x="50" y="160" width="1100" height="4" rx="2" fill="url(#barActive)">
+      <animate attributeName="width" values="0;1100;1100" dur="2.2s" begin="0.15s" fill="freeze"/>
+    </rect>
+
+    <text x="50" y="200">GENERATIVE AI</text>
+    <text x="1050" y="200" fill="#8B5CF6" text-anchor="end">ACTIVE</text>
+    <rect x="50" y="210" width="1100" height="4" rx="2" fill="#1F2937"/>
+    <rect x="50" y="210" width="820" height="4" rx="2" fill="url(#barActive)">
+      <animate attributeName="width" values="0;820;820" dur="2.2s" begin="0.3s" fill="freeze"/>
+    </rect>
+
+    <text x="50" y="250">RAG SYSTEMS</text>
+    <text x="1050" y="250" fill="#F59E0B" text-anchor="end">BUILDING</text>
+    <rect x="50" y="260" width="1100" height="4" rx="2" fill="#1F2937"/>
+    <rect x="50" y="260" width="620" height="4" rx="2" fill="url(#barActive)">
+      <animate attributeName="width" values="0;620;620" dur="2.2s" begin="0.45s" fill="freeze"/>
+    </rect>
+
+    <text x="50" y="300">RESEARCH</text>
+    <text x="1050" y="300" fill="#8B5CF6" text-anchor="end">ACTIVE</text>
+    <rect x="50" y="310" width="1100" height="4" rx="2" fill="#1F2937"/>
+    <rect x="50" y="310" width="760" height="4" rx="2" fill="url(#barActive)">
+      <animate attributeName="width" values="0;760;760" dur="2.2s" begin="0.6s" fill="freeze"/>
+    </rect>
+  </g>
+
+  <line x1="30" y1="345" x2="1170" y2="345" stroke="#374151" stroke-opacity="0.5"/>
+
+  <text x="50" y="375" font-family="JetBrains Mono, Consolas, monospace" font-size="13" fill="#6B7280">CURRENT OBJECTIVE</text>
+  <text x="50" y="398" font-family="JetBrains Mono, Consolas, monospace" font-size="15" fill="#E5E7EB">Build intelligent systems with real-world clinical and research impact.</text>
+
+  <circle cx="1140" cy="390" r="5" fill="#22D3EE">
+    <animate attributeName="opacity" values="1;0.2;1" dur="1.8s" repeatCount="indefinite"/>
+  </circle>
+  <text x="1120" y="395" text-anchor="end" font-family="JetBrains Mono, Consolas, monospace" font-size="12" fill="#22D3EE">STATUS :: ONLINE</text>
+</svg>

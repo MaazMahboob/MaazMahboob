@@ -1,0 +1,67 @@
+<svg width="1200" height="480" viewBox="0 0 1200 480" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="AI capability matrix grouped by computer vision, generative AI and NLP, backend and MLOps, and deployment">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#0B1020"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="480" fill="#05070D"/>
+
+  <!-- Column 1: Computer Vision -->
+  <g>
+    <rect x="30" y="20" width="270" height="440" rx="14" fill="url(#cardBg)" stroke="#7C3AED" stroke-opacity="0.35"/>
+    <rect x="30" y="20" width="270" height="4" rx="2" fill="#7C3AED"/>
+    <text x="55" y="60" font-family="JetBrains Mono, Consolas, monospace" font-size="13" letter-spacing="2" fill="#8B5CF6">COMPUTER VISION</text>
+    <g font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" fill="#E5E7EB">
+      <text x="55" y="105">YOLOv11 / YOLOv12</text>
+      <text x="55" y="140">Faster R-CNN</text>
+      <text x="55" y="175">OpenCV</text>
+      <text x="55" y="210">Medical Imaging (DICOM/PNG)</text>
+      <text x="55" y="245">Object Detection &amp; Localization</text>
+    </g>
+  </g>
+
+  <!-- Column 2: Generative AI / NLP -->
+  <g>
+    <rect x="320" y="20" width="270" height="440" rx="14" fill="url(#cardBg)" stroke="#22D3EE" stroke-opacity="0.35"/>
+    <rect x="320" y="20" width="270" height="4" rx="2" fill="#22D3EE"/>
+    <text x="345" y="60" font-family="JetBrains Mono, Consolas, monospace" font-size="13" letter-spacing="2" fill="#22D3EE">GENERATIVE AI &amp; NLP</text>
+    <g font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" fill="#E5E7EB">
+      <text x="345" y="105">LangGraph</text>
+      <text x="345" y="140">Retrieval-Augmented Generation</text>
+      <text x="345" y="175">Ollama (local LLM serving)</text>
+      <text x="345" y="210">PubMedBERT</text>
+      <text x="345" y="245">Biomedical NLP</text>
+    </g>
+  </g>
+
+  <!-- Column 3: ML / Data -->
+  <g>
+    <rect x="610" y="20" width="270" height="440" rx="14" fill="url(#cardBg)" stroke="#8B5CF6" stroke-opacity="0.35"/>
+    <rect x="610" y="20" width="270" height="4" rx="2" fill="#8B5CF6"/>
+    <text x="635" y="60" font-family="JetBrains Mono, Consolas, monospace" font-size="13" letter-spacing="2" fill="#8B5CF6">MACHINE LEARNING</text>
+    <g font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" fill="#E5E7EB">
+      <text x="635" y="105">PyTorch</text>
+      <text x="635" y="140">Scikit-learn</text>
+      <text x="635" y="175">CTGAN (synthetic data)</text>
+      <text x="635" y="210">Class Imbalance Handling</text>
+      <text x="635" y="245">Pandas / NumPy</text>
+    </g>
+  </g>
+
+  <!-- Column 4: Engineering / Deployment -->
+  <g>
+    <rect x="900" y="20" width="270" height="440" rx="14" fill="url(#cardBg)" stroke="#06B6D4" stroke-opacity="0.35"/>
+    <rect x="900" y="20" width="270" height="4" rx="2" fill="#06B6D4"/>
+    <text x="925" y="60" font-family="JetBrains Mono, Consolas, monospace" font-size="13" letter-spacing="2" fill="#06B6D4">ENGINEERING</text>
+    <g font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" fill="#E5E7EB">
+      <text x="925" y="105">Python</text>
+      <text x="925" y="140">Streamlit</text>
+      <text x="925" y="175">SQLite</text>
+      <text x="925" y="210">Session-based RBAC</text>
+      <text x="925" y="245">Git / GitHub</text>
+    </g>
+  </g>
+
+  <text x="600" y="450" text-anchor="middle" font-family="JetBrains Mono, Consolas, monospace" font-size="12" fill="#4B5563">STACK VERIFIED AGAINST SHIPPED PROJECTS AND PUBLICATIONS</text>
+</svg>

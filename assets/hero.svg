@@ -1,0 +1,79 @@
+<svg width="1200" height="360" viewBox="0 0 1200 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Maaz Mahboob — AI / ML Engineer. Computer Vision, Deep Learning, Generative AI.">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05070D"/>
+      <stop offset="55%" stop-color="#0B1020"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="55%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#22D3EE"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1F2937" stroke-width="1" opacity="0.35"/>
+    </pattern>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="360" fill="url(#bgGrad)"/>
+  <rect width="1200" height="360" fill="url(#grid)"/>
+  <circle cx="1000" cy="90" r="260" fill="url(#glow)"/>
+  <circle cx="150" cy="320" r="220" fill="url(#glow)"/>
+
+  <!-- top status strip -->
+  <text x="60" y="56" font-family="JetBrains Mono, Consolas, monospace" font-size="13" letter-spacing="3" fill="#22D3EE" opacity="0.85">MAAZ.OS</text>
+  <circle cx="140" cy="52" r="4" fill="#22D3EE">
+    <animate attributeName="opacity" values="1;0.25;1" dur="2.4s" repeatCount="indefinite"/>
+  </circle>
+  <text x="152" y="56" font-family="JetBrains Mono, Consolas, monospace" font-size="12" letter-spacing="2" fill="#93C5FD" opacity="0.75">SYSTEM ONLINE</text>
+
+  <!-- name -->
+  <text x="60" y="160" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="64" font-weight="700" fill="url(#textGrad)" filter="url(#softGlow)">MAAZ MAHBOOB</text>
+
+  <!-- role -->
+  <text x="63" y="200" font-family="JetBrains Mono, Consolas, monospace" font-size="19" letter-spacing="1.5" fill="#E5E7EB" opacity="0.9">
+    AI / ML ENGINEER
+    <tspan fill="#22D3EE"> · </tspan>
+    COMPUTER VISION
+    <tspan fill="#22D3EE"> · </tspan>
+    GENERATIVE AI
+  </text>
+
+  <!-- typing tagline -->
+  <g>
+    <text x="63" y="240" font-family="JetBrains Mono, Consolas, monospace" font-size="16" fill="#8B9DC3">
+      <tspan id="typeline">Building systems that see, reason, and explain their findings.</tspan>
+    </text>
+    <rect x="63" y="228" width="10" height="18" fill="#22D3EE">
+      <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+      <animate attributeName="x" values="63;700" dur="0.01s" begin="0.01s" fill="freeze"/>
+    </rect>
+  </g>
+
+  <!-- baseline data ticks -->
+  <g stroke="#374151" stroke-width="1">
+    <line x1="60" y1="300" x2="1140" y2="300" opacity="0.5"/>
+  </g>
+  <g font-family="JetBrains Mono, Consolas, monospace" font-size="12" fill="#6B7280">
+    <text x="60" y="322">ZHCET · AMU</text>
+    <text x="220" y="322">B.TECH — ARTIFICIAL INTELLIGENCE · 2025</text>
+    <text x="620" y="322">GATE 2025 AIR 6991</text>
+    <text x="870" y="322">ALIGARH, INDIA</text>
+  </g>
+
+  <!-- scanning line -->
+  <rect x="0" y="0" width="4" height="360" fill="#7C3AED" opacity="0.8">
+    <animate attributeName="x" values="0;1196;0" dur="9s" repeatCount="indefinite"/>
+  </rect>
+</svg>

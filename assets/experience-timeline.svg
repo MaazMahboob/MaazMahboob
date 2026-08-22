@@ -1,0 +1,31 @@
+<svg width="1200" height="220" viewBox="0 0 1200 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Experience timeline: SURE Trust and Global Next Consulting internships in 2025, moving toward AI/ML engineering roles in 2026">
+  <rect width="1200" height="220" fill="#05070D"/>
+  <line x1="60" y1="110" x2="1140" y2="110" stroke="#374151" stroke-width="2" opacity="0.6"/>
+  <line x1="60" y1="110" x2="1140" y2="110" stroke="#7C3AED" stroke-width="2" stroke-dasharray="4 8">
+    <animate attributeName="stroke-dashoffset" values="0;-120" dur="5s" repeatCount="indefinite"/>
+  </line>
+
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif" fill="#E5E7EB">
+    <circle cx="180" cy="110" r="8" fill="#22D3EE"/>
+    <text x="180" y="80" text-anchor="middle" font-size="13" fill="#6B7280">SEP 2025 – MAY 2026</text>
+    <text x="180" y="145" text-anchor="middle" font-size="15" font-weight="600">SURE Trust</text>
+    <text x="180" y="165" text-anchor="middle" font-size="12" fill="#93C5FD">Python &amp; ML Intern (remote)</text>
+
+    <circle cx="500" cy="110" r="8" fill="#7C3AED"/>
+    <text x="500" y="80" text-anchor="middle" font-size="13" fill="#6B7280">OCT – DEC 2025</text>
+    <text x="500" y="145" text-anchor="middle" font-size="15" font-weight="600">GNCIPL</text>
+    <text x="500" y="165" text-anchor="middle" font-size="12" fill="#93C5FD">AI/ML Intern (full-time)</text>
+
+    <circle cx="850" cy="110" r="8" fill="#8B5CF6"/>
+    <text x="850" y="80" text-anchor="middle" font-size="13" fill="#6B7280">2025</text>
+    <text x="850" y="145" text-anchor="middle" font-size="15" font-weight="600">B.Tech AI, ZHCET AMU</text>
+    <text x="850" y="165" text-anchor="middle" font-size="12" fill="#93C5FD">CPI 8.22 · GATE AIR 6991</text>
+
+    <circle cx="1080" cy="110" r="9" fill="#06B6D4">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="1080" y="80" text-anchor="middle" font-size="13" fill="#6B7280">2026 →</text>
+    <text x="1080" y="145" text-anchor="middle" font-size="15" font-weight="600">Next: AI/ML Engineer</text>
+    <text x="1080" y="165" text-anchor="middle" font-size="12" fill="#93C5FD">Computer Vision · MSc (EU)</text>
+  </g>
+</svg>
